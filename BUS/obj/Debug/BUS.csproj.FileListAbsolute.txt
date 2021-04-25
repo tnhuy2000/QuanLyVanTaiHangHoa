@@ -1,0 +1,16 @@
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\bin\Debug\BUS.exe.config
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\bin\Debug\BUS.exe
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\bin\Debug\BUS.pdb
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\bin\Debug\DAO.exe
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\bin\Debug\DTO.exe
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\bin\Debug\DAO.pdb
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\bin\Debug\DAO.exe.config
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\bin\Debug\DTO.pdb
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\bin\Debug\DTO.exe.config
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\obj\Debug\BUS.Properties.Resources.resources
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\obj\Debug\BUS.exe
+D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\BUS\obj\Debug\BUS.pdb
