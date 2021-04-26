@@ -11,3 +11,16 @@ D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\DAO\obj\
 D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\DAO\obj\Debug\DAO.exe
 D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\DAO\obj\Debug\DAO.pdb
+E:\doan\QuanLyVanTaiHangHoa\DAO\bin\Debug\DAO.exe.config
+E:\doan\QuanLyVanTaiHangHoa\DAO\bin\Debug\DAO.exe
+E:\doan\QuanLyVanTaiHangHoa\DAO\bin\Debug\DAO.pdb
+E:\doan\QuanLyVanTaiHangHoa\DAO\bin\Debug\DTO.exe
+E:\doan\QuanLyVanTaiHangHoa\DAO\bin\Debug\DTO.pdb
+E:\doan\QuanLyVanTaiHangHoa\DAO\bin\Debug\DTO.exe.config
+E:\doan\QuanLyVanTaiHangHoa\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+E:\doan\QuanLyVanTaiHangHoa\DAO\obj\Debug\DAO.Properties.Resources.resources
+E:\doan\QuanLyVanTaiHangHoa\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+E:\doan\QuanLyVanTaiHangHoa\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+E:\doan\QuanLyVanTaiHangHoa\DAO\obj\Debug\DAO.csproj.CopyComplete
+E:\doan\QuanLyVanTaiHangHoa\DAO\obj\Debug\DAO.exe
+E:\doan\QuanLyVanTaiHangHoa\DAO\obj\Debug\DAO.pdb

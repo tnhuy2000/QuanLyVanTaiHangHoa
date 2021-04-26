@@ -20,6 +20,7 @@ namespace GUI
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
+
         }
     }
 }

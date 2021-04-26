@@ -7,3 +7,12 @@ D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\DTO\obj\
 D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\DTO\obj\Debug\DTO.exe
 D:\DH19TH1\hk6_2020-2021\laptrinhquanly\doan\QLVTHH\QuanLyVanTaiHangHoa\DTO\obj\Debug\DTO.pdb
+E:\doan\QuanLyVanTaiHangHoa\DTO\bin\Debug\DTO.exe.config
+E:\doan\QuanLyVanTaiHangHoa\DTO\bin\Debug\DTO.exe
+E:\doan\QuanLyVanTaiHangHoa\DTO\bin\Debug\DTO.pdb
+E:\doan\QuanLyVanTaiHangHoa\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+E:\doan\QuanLyVanTaiHangHoa\DTO\obj\Debug\DTO.Properties.Resources.resources
+E:\doan\QuanLyVanTaiHangHoa\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+E:\doan\QuanLyVanTaiHangHoa\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\doan\QuanLyVanTaiHangHoa\DTO\obj\Debug\DTO.exe
+E:\doan\QuanLyVanTaiHangHoa\DTO\obj\Debug\DTO.pdb
