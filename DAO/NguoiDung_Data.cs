@@ -10,7 +10,8 @@ namespace DAO
 {
     public class NguoiDung_Data
     {
-        SqlDataProvider sdp =new SqlDataProvider();
+        //SqlDataProvider sdp =new SqlDataProvider();
+        /*
         public DataTable LayDSNguoiDungTheoUSPASS(string user, string pass)
         {
             string sql =
@@ -30,5 +31,6 @@ namespace DAO
             return sdp;
 
         }
+        */
     }
 }

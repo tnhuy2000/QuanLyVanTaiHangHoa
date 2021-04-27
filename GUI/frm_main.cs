@@ -80,5 +80,11 @@ namespace GUI
             if (tr == DialogResult.OK)
                 Application.Exit();
         }
+
+        private void mi_KhachHang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frm_khachhang kh = new frm_khachhang();
+            kh.Show();
+        }
     }
 }

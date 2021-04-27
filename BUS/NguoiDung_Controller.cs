@@ -12,6 +12,7 @@ namespace BUS
     {
         NguoiDung_Data data = new NguoiDung_Data();
         //neu tra ve 0 thi xem nhu sai mat khau va user, nguoc lai tra ve quyen cua user do
+        /*
         public int XuLyDangNhap(string user, string pass)
         {
             DataTable tb = data.LayDSNguoiDungTheoUSPASS(user, pass);
@@ -19,5 +20,6 @@ namespace BUS
                 return 0;
             else return Convert.ToInt32(tb.Rows[0]["quyen"].ToString());
         }
+        */
     }
 }

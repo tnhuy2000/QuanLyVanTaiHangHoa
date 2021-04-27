@@ -31,23 +31,33 @@ namespace GUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_khachhang));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.mi_Them = new DevExpress.XtraBars.BarButtonItem();
             this.mi_Xoa = new DevExpress.XtraBars.BarButtonItem();
             this.mi_Sua = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.mi_Luu = new DevExpress.XtraBars.BarButtonItem();
             this.mi_Huy = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.mi_Thoat = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemSearchControl1 = new DevExpress.XtraEditors.Repository.RepositoryItemSearchControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.txtCmnd = new System.Windows.Forms.TextBox();
+            this.txtDienThoai = new System.Windows.Forms.TextBox();
+            this.txtMaKH = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgvDSKhachHang = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSKhachHang)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -63,31 +73,14 @@ namespace GUI
             this.mi_Huy,
             this.mi_Thoat});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonControl1.MaxItemId = 8;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemSearchControl1});
-            this.ribbonControl1.Size = new System.Drawing.Size(791, 139);
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1,
-            this.ribbonPageGroup2,
-            this.ribbonPageGroup3,
-            this.ribbonPageGroup4});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.mi_Them);
-            this.ribbonPageGroup1.ItemLinks.Add(this.mi_Xoa);
-            this.ribbonPageGroup1.ItemLinks.Add(this.mi_Sua);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonControl1.Size = new System.Drawing.Size(736, 140);
             // 
             // mi_Them
             // 
@@ -97,6 +90,7 @@ namespace GUI
             this.mi_Them.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("mi_Them.ImageOptions.LargeImage")));
             this.mi_Them.LargeWidth = 55;
             this.mi_Them.Name = "mi_Them";
+            this.mi_Them.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mi_Them_ItemClick);
             // 
             // mi_Xoa
             // 
@@ -116,12 +110,6 @@ namespace GUI
             this.mi_Sua.LargeWidth = 55;
             this.mi_Sua.Name = "mi_Sua";
             // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.mi_Luu);
-            this.ribbonPageGroup2.ItemLinks.Add(this.mi_Huy);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            // 
             // mi_Luu
             // 
             this.mi_Luu.Caption = "Lưu";
@@ -140,11 +128,6 @@ namespace GUI
             this.mi_Huy.LargeWidth = 55;
             this.mi_Huy.Name = "mi_Huy";
             // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.mi_Thoat);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            // 
             // mi_Thoat
             // 
             this.mi_Thoat.Caption = "Thoát";
@@ -154,10 +137,32 @@ namespace GUI
             this.mi_Thoat.LargeWidth = 55;
             this.mi_Thoat.Name = "mi_Thoat";
             // 
-            // ribbonPageGroup4
+            // ribbonPage1
             // 
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "ribbonPageGroup4";
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup2,
+            this.ribbonPageGroup3});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "Khách Hàng";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.mi_Them);
+            this.ribbonPageGroup1.ItemLinks.Add(this.mi_Xoa);
+            this.ribbonPageGroup1.ItemLinks.Add(this.mi_Sua);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.mi_Luu);
+            this.ribbonPageGroup2.ItemLinks.Add(this.mi_Huy);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.mi_Thoat);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             // 
             // repositoryItemSearchControl1
             // 
@@ -169,36 +174,130 @@ namespace GUI
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(12, 177);
+            this.groupBox1.Controls.Add(this.txtDiaChi);
+            this.groupBox1.Controls.Add(this.txtHoTen);
+            this.groupBox1.Controls.Add(this.txtCmnd);
+            this.groupBox1.Controls.Add(this.txtDienThoai);
+            this.groupBox1.Controls.Add(this.txtMaKH);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(12, 147);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(767, 136);
+            this.groupBox1.Size = new System.Drawing.Size(712, 136);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
             // 
-            // dataGridView1
+            // txtDiaChi
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 338);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(767, 169);
-            this.dataGridView1.TabIndex = 5;
+            this.txtDiaChi.Location = new System.Drawing.Point(101, 95);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(565, 24);
+            this.txtDiaChi.TabIndex = 5;
+            // 
+            // txtHoTen
+            // 
+            this.txtHoTen.Location = new System.Drawing.Point(99, 57);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(200, 24);
+            this.txtHoTen.TabIndex = 5;
+            // 
+            // txtCmnd
+            // 
+            this.txtCmnd.Location = new System.Drawing.Point(466, 57);
+            this.txtCmnd.Name = "txtCmnd";
+            this.txtCmnd.Size = new System.Drawing.Size(200, 24);
+            this.txtCmnd.TabIndex = 5;
+            // 
+            // txtDienThoai
+            // 
+            this.txtDienThoai.Location = new System.Drawing.Point(466, 21);
+            this.txtDienThoai.Name = "txtDienThoai";
+            this.txtDienThoai.Size = new System.Drawing.Size(200, 24);
+            this.txtDienThoai.TabIndex = 5;
+            // 
+            // txtMaKH
+            // 
+            this.txtMaKH.Location = new System.Drawing.Point(99, 21);
+            this.txtMaKH.Name = "txtMaKH";
+            this.txtMaKH.Size = new System.Drawing.Size(200, 24);
+            this.txtMaKH.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(376, 62);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 18);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "CMND:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(373, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(78, 18);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Điện thoại:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(35, 98);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 18);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Địa chỉ:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(35, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 18);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Họ tên:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(35, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã KH:";
+            // 
+            // dgvDSKhachHang
+            // 
+            this.dgvDSKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSKhachHang.Location = new System.Drawing.Point(0, 289);
+            this.dgvDSKhachHang.Name = "dgvDSKhachHang";
+            this.dgvDSKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDSKhachHang.Size = new System.Drawing.Size(724, 218);
+            this.dgvDSKhachHang.TabIndex = 5;
             // 
             // frm_khachhang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(791, 519);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(736, 519);
+            this.Controls.Add(this.dgvDSKhachHang);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ribbonControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_khachhang";
             this.Text = "frm_khachhang";
+            this.Load += new System.EventHandler(this.frm_khachhang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSKhachHang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,9 +316,18 @@ namespace GUI
         private DevExpress.XtraBars.BarButtonItem mi_Thoat;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraEditors.Repository.RepositoryItemSearchControl repositoryItemSearchControl1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDSKhachHang;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.TextBox txtCmnd;
+        private System.Windows.Forms.TextBox txtDienThoai;
+        private System.Windows.Forms.TextBox txtMaKH;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -116,7 +116,7 @@ namespace GUI
             this.m_NghiepVu,
             this.ribbonPage1,
             this.ribbonPage2});
-            this.ribbonControl1.Size = new System.Drawing.Size(771, 139);
+            this.ribbonControl1.Size = new System.Drawing.Size(771, 140);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // mi_KhachHang
@@ -129,6 +129,7 @@ namespace GUI
             this.mi_KhachHang.Name = "mi_KhachHang";
             this.mi_KhachHang.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.mi_KhachHang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mi_KhachHang_ItemClick);
             // 
             // mi_HangHoa
             // 
@@ -383,10 +384,10 @@ namespace GUI
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 503);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 500);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(771, 25);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(771, 28);
             // 
             // navBarGroup1
             // 
