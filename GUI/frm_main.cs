@@ -1,5 +1,4 @@
-﻿using BUS;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,82 +8,154 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace GUI
 {
     public partial class frm_main : Form
     {
-        public frm_main()
+        private string ten;
+        public frm_main(string tendangnhap)
         {
             InitializeComponent();
-            DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(ribbonGalleryBarItem1, true);
+            ten = tendangnhap;
         }
 
-        NguoiDung_Controller ndctrl = new NguoiDung_Controller();
-        int kq;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //Lay ngày giờ hiện tại hệ thống
+            DateTime t = DateTime.Now;
+            string day = t.Day.ToString();
+            string month = t.Month.ToString();
+            string year = t.Year.ToString();
+            string hour = t.Hour.ToString();
+            string min = "";
+            int minu = t.Minute;
+            if(minu<10)
+            {
+                min = "0" + t.Minute.ToString();
+            }
+            else
+            {
+                min = t.Minute.ToString();
+            }    
+
+            string sec = t.Second.ToString();
+            tssDatetime.Text = "Ngày "+day + ", tháng " + month + " , năm " + year + " - " + hour + ":" + min + ":" + sec;
+        }
+
+        private void mnuKhachHang_Click(object sender, EventArgs e)
+        {
+            frm_khachhang f = new frm_khachhang();
+            ViewChildForm(f);
+        }
+
         private void frm_main_Load(object sender, EventArgs e)
         {
-            /*
+            this.KeyPreview = true;
+            IsMdiContainer = true;
             //frm_dangnhap dn = new frm_dangnhap();
-            if(dn.ShowDialog()==DialogResult.OK)
+            if (this.ten == "admin")
             {
-                kq=ndctrl.XuLyDangNhap(dn.txtUsername.Text, dn.txtPassword.Text);
-                if (kq == 0)
-                {
-                    TatChucNang();
-                    MessageBox.Show("Đăng nhập thất bại, xin kiểm tra lại username và password ");
-                }
-                else PhanQuyen(kq);
+                lblHienThiNguoiDung.Text = "Bạn là Administrator";
             }
-            */
-        }
-        //hàm tắt các chức năng của chương trình
-        //Enable các menu=false
-        public void TatChucNang()
-        {
-            mi_KhachHang.Enabled = false;
-            mi_HangHoa.Enabled = false;
-            
-        }
-        public void PhanQuyen(int quyen)
-        {
-            switch (quyen)
+            else if(this.ten=="KT")
             {
-                case 1://quyền admin
-                    {
-                        mi_KhachHang.Enabled = true;
-                        mi_HangHoa.Enabled = true;
-                        
-                        break;
-                    }
-                case 2://quyền user
-                    {
-                        mi_KhachHang.Enabled = false;
-                        mi_HangHoa.Enabled = false;
-                        
-                        break;
-                    }
-                default:
-                    {
-                        TatChucNang();
-                        break;
-                    }
+                lblHienThiNguoiDung.Text = "Bạn là Nhân viên kế toán";
             }
+            else
+            {
+                lblHienThiNguoiDung.Text = "Bạn là Nhân viên kinh doanh";
+            }    
+        }
+        public void ViewChildForm(Form _form)
+        {
+            //check before open
+            if (!IsFormActived(_form))
+            {
                 
+                _form.MdiParent = this;
+                _form.Show();
+            }
+        }
+        private bool IsFormActived(Form form)
+        {
+            bool IsOpenend = false;
+            if (MdiChildren.Count()>0)
+            {
+                foreach(var item in MdiChildren)
+                {
+                    if(form.Name==item.Name)
+                    {
+                        //Active this form
+                        xtraTabbedMdiManager1.Pages[item].MdiChild.Activate();
+                        IsOpenend = true;
+                    }
+                }
+            }
+            return IsOpenend;
+        }
+        public void MacDinh()
+        {
+
+        }
+        public void Admin()
+        {
+            this.mnuHeThong.Enabled = true;
+            this.mnu_DanhMuc.Enabled = true;
+            this.mnu_NghiepVu.Enabled = true;
+            this.mnu_HuongDan.Enabled = true;
+
+        }
+        public void KeToan()
+        {
+            this.mnuHeThong.Enabled = true;
+            //this.mnu_DanhMuc.Enabled = true;
+            this.mnu_KhachHang.Enabled = true;
+            this.mnu_TaiXe.Enabled = false;
+            //this.mnu_NghiepVu.Enabled = true;
+            this.mnu_HuongDan.Enabled = true;
+
+        }
+        public void KinhDoanh()
+        {
+            this.mnuHeThong.Enabled = true;
+            //this.mnu_DanhMuc.Enabled = true;
+            this.mnu_KhachHang.Enabled = false;
+            this.mnu_TaiXe.Enabled = true;
+            //this.mnu_NghiepVu.Enabled = true;
+            this.mnu_HuongDan.Enabled = true;
+
         }
 
-        private void mi_Thoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void mnu_DangKy_Click(object sender, EventArgs e)
+        {
+            frm_QuanLyNguoiDung f = new frm_QuanLyNguoiDung();
+            ViewChildForm(f);
+        }
+
+        private void mnu_DangXuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frm_dangnhap dn = new frm_dangnhap();
+            dn.Show();   
+        }
+
+        private void mnu_Thoat_Click(object sender, EventArgs e)
         {
             DialogResult tr;
-            tr=MessageBox.Show("Bạn có muốn thoát chương trình hay không?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            tr = MessageBox.Show("Bạn có muốn thoát chương trình hay không?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (tr == DialogResult.OK)
                 Application.Exit();
         }
 
-        private void mi_KhachHang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void frm_main_KeyUp(object sender, KeyEventArgs e)
         {
-            frm_khachhang kh = new frm_khachhang();
-            kh.Show();
+            if (e.Control)
+            {
+                if (e.KeyCode.Equals(Keys.Escape))
+                {
+                    mnu_Thoat_Click(null, null);
+                }
+            }
         }
     }
 }

@@ -29,19 +29,7 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_khachhang));
-            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.mi_Them = new DevExpress.XtraBars.BarButtonItem();
-            this.mi_Xoa = new DevExpress.XtraBars.BarButtonItem();
-            this.mi_Sua = new DevExpress.XtraBars.BarButtonItem();
-            this.mi_Luu = new DevExpress.XtraBars.BarButtonItem();
-            this.mi_Huy = new DevExpress.XtraBars.BarButtonItem();
-            this.mi_Thoat = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.repositoryItemSearchControl1 = new DevExpress.XtraEditors.Repository.RepositoryItemSearchControl();
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
@@ -54,123 +42,23 @@ namespace GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvDSKhachHang = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchControl1)).BeginInit();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSKhachHang)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // ribbonControl1
-            // 
-            this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl1.ExpandCollapseItem,
-            this.ribbonControl1.SearchEditItem,
-            this.mi_Them,
-            this.mi_Xoa,
-            this.mi_Sua,
-            this.mi_Luu,
-            this.mi_Huy,
-            this.mi_Thoat});
-            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbonControl1.MaxItemId = 8;
-            this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
-            this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemSearchControl1});
-            this.ribbonControl1.Size = new System.Drawing.Size(736, 140);
-            // 
-            // mi_Them
-            // 
-            this.mi_Them.Caption = "Thêm";
-            this.mi_Them.Id = 1;
-            this.mi_Them.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mi_Them.ImageOptions.Image")));
-            this.mi_Them.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("mi_Them.ImageOptions.LargeImage")));
-            this.mi_Them.LargeWidth = 55;
-            this.mi_Them.Name = "mi_Them";
-            this.mi_Them.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mi_Them_ItemClick);
-            // 
-            // mi_Xoa
-            // 
-            this.mi_Xoa.Caption = "Xoá";
-            this.mi_Xoa.Id = 2;
-            this.mi_Xoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mi_Xoa.ImageOptions.Image")));
-            this.mi_Xoa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("mi_Xoa.ImageOptions.LargeImage")));
-            this.mi_Xoa.LargeWidth = 55;
-            this.mi_Xoa.Name = "mi_Xoa";
-            // 
-            // mi_Sua
-            // 
-            this.mi_Sua.Caption = "Sửa";
-            this.mi_Sua.Id = 3;
-            this.mi_Sua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mi_Sua.ImageOptions.Image")));
-            this.mi_Sua.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("mi_Sua.ImageOptions.LargeImage")));
-            this.mi_Sua.LargeWidth = 55;
-            this.mi_Sua.Name = "mi_Sua";
-            // 
-            // mi_Luu
-            // 
-            this.mi_Luu.Caption = "Lưu";
-            this.mi_Luu.Id = 4;
-            this.mi_Luu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mi_Luu.ImageOptions.Image")));
-            this.mi_Luu.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("mi_Luu.ImageOptions.LargeImage")));
-            this.mi_Luu.LargeWidth = 55;
-            this.mi_Luu.Name = "mi_Luu";
-            // 
-            // mi_Huy
-            // 
-            this.mi_Huy.Caption = "Huỷ";
-            this.mi_Huy.Id = 5;
-            this.mi_Huy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mi_Huy.ImageOptions.Image")));
-            this.mi_Huy.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("mi_Huy.ImageOptions.LargeImage")));
-            this.mi_Huy.LargeWidth = 55;
-            this.mi_Huy.Name = "mi_Huy";
-            // 
-            // mi_Thoat
-            // 
-            this.mi_Thoat.Caption = "Thoát";
-            this.mi_Thoat.Id = 6;
-            this.mi_Thoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mi_Thoat.ImageOptions.Image")));
-            this.mi_Thoat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("mi_Thoat.ImageOptions.LargeImage")));
-            this.mi_Thoat.LargeWidth = 55;
-            this.mi_Thoat.Name = "mi_Thoat";
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1,
-            this.ribbonPageGroup2,
-            this.ribbonPageGroup3});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Khách Hàng";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.mi_Them);
-            this.ribbonPageGroup1.ItemLinks.Add(this.mi_Xoa);
-            this.ribbonPageGroup1.ItemLinks.Add(this.mi_Sua);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.mi_Luu);
-            this.ribbonPageGroup2.ItemLinks.Add(this.mi_Huy);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.mi_Thoat);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            // 
-            // repositoryItemSearchControl1
-            // 
-            this.repositoryItemSearchControl1.AutoHeight = false;
-            this.repositoryItemSearchControl1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Repository.ClearButton(),
-            new DevExpress.XtraEditors.Repository.SearchButton()});
-            this.repositoryItemSearchControl1.Name = "repositoryItemSearchControl1";
             // 
             // groupBox1
             // 
@@ -184,139 +72,228 @@ namespace GUI
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 147);
+            this.groupBox1.Location = new System.Drawing.Point(11, 48);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(712, 136);
+            this.groupBox1.Size = new System.Drawing.Size(602, 131);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(101, 95);
+            this.txtDiaChi.Location = new System.Drawing.Point(80, 91);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(565, 24);
+            this.txtDiaChi.Size = new System.Drawing.Size(500, 22);
             this.txtDiaChi.TabIndex = 5;
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(99, 57);
+            this.txtHoTen.Location = new System.Drawing.Point(78, 57);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(200, 24);
+            this.txtHoTen.Size = new System.Drawing.Size(223, 22);
             this.txtHoTen.TabIndex = 5;
             // 
             // txtCmnd
             // 
-            this.txtCmnd.Location = new System.Drawing.Point(466, 57);
+            this.txtCmnd.Location = new System.Drawing.Point(410, 54);
             this.txtCmnd.Name = "txtCmnd";
-            this.txtCmnd.Size = new System.Drawing.Size(200, 24);
+            this.txtCmnd.Size = new System.Drawing.Size(170, 22);
             this.txtCmnd.TabIndex = 5;
             // 
             // txtDienThoai
             // 
-            this.txtDienThoai.Location = new System.Drawing.Point(466, 21);
+            this.txtDienThoai.Location = new System.Drawing.Point(411, 22);
             this.txtDienThoai.Name = "txtDienThoai";
-            this.txtDienThoai.Size = new System.Drawing.Size(200, 24);
+            this.txtDienThoai.Size = new System.Drawing.Size(169, 22);
             this.txtDienThoai.TabIndex = 5;
             // 
             // txtMaKH
             // 
-            this.txtMaKH.Location = new System.Drawing.Point(99, 21);
+            this.txtMaKH.Location = new System.Drawing.Point(78, 25);
             this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(200, 24);
+            this.txtMaKH.Size = new System.Drawing.Size(127, 22);
             this.txtMaKH.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(376, 62);
+            this.label5.Location = new System.Drawing.Point(337, 59);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 18);
+            this.label5.Size = new System.Drawing.Size(51, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "CMND:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(373, 27);
+            this.label4.Location = new System.Drawing.Point(335, 28);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 18);
+            this.label4.Size = new System.Drawing.Size(70, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Điện thoại:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 98);
+            this.label3.Location = new System.Drawing.Point(21, 93);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 18);
+            this.label3.Size = new System.Drawing.Size(51, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Địa chỉ:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 59);
+            this.label2.Location = new System.Drawing.Point(21, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 18);
+            this.label2.Size = new System.Drawing.Size(50, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Họ tên:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 24);
+            this.label1.Location = new System.Drawing.Point(21, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 18);
+            this.label1.Size = new System.Drawing.Size(51, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã KH:";
             // 
             // dgvDSKhachHang
             // 
+            this.dgvDSKhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDSKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSKhachHang.Location = new System.Drawing.Point(0, 289);
+            this.dgvDSKhachHang.Location = new System.Drawing.Point(11, 190);
             this.dgvDSKhachHang.Name = "dgvDSKhachHang";
             this.dgvDSKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSKhachHang.Size = new System.Drawing.Size(724, 218);
+            this.dgvDSKhachHang.Size = new System.Drawing.Size(602, 176);
             this.dgvDSKhachHang.TabIndex = 5;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripSeparator1,
+            this.toolStripButton2,
+            this.toolStripSeparator2,
+            this.toolStripButton3,
+            this.toolStripSeparator3,
+            this.toolStripLabel1,
+            this.toolStripTextBox1,
+            this.toolStripButton5,
+            this.toolStripSeparator4,
+            this.toolStripButton4});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(621, 39);
+            this.toolStrip1.TabIndex = 7;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 39);
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(56, 36);
+            this.toolStripLabel1.Text = "Tìm kiếm";
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(150, 39);
+            this.toolStripTextBox1.ToolTipText = "Nhập thông tin cần tìm";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 39);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 39);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 39);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = global::GUI.Properties.Resources.Add_32x32;
+            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(73, 36);
+            this.toolStripButton1.Text = "Thêm";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.Image = global::GUI.Properties.Resources.DeleteHeader_32x32;
+            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(63, 36);
+            this.toolStripButton2.Text = "Xoá";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.Image = global::GUI.Properties.Resources.EditTask_32x32;
+            this.toolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(62, 36);
+            this.toolStripButton3.Text = "Sửa";
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.Image = global::GUI.Properties.Resources.Cancel_32x321;
+            this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(73, 36);
+            this.toolStripButton4.Text = "Thoát";
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = global::GUI.Properties.Resources.Zoom_32x32;
+            this.toolStripButton5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton5.Text = "Tìm kiếm";
             // 
             // frm_khachhang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 519);
+            this.ClientSize = new System.Drawing.Size(621, 372);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dgvDSKhachHang);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.ribbonControl1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "frm_khachhang";
-            this.Text = "frm_khachhang";
+            this.Text = "Khách hàng";
             this.Load += new System.EventHandler(this.frm_khachhang_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchControl1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSKhachHang)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.BarButtonItem mi_Them;
-        private DevExpress.XtraBars.BarButtonItem mi_Xoa;
-        private DevExpress.XtraBars.BarButtonItem mi_Sua;
-        private DevExpress.XtraBars.BarButtonItem mi_Luu;
-        private DevExpress.XtraBars.BarButtonItem mi_Huy;
-        private DevExpress.XtraBars.BarButtonItem mi_Thoat;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraEditors.Repository.RepositoryItemSearchControl repositoryItemSearchControl1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvDSKhachHang;
         private System.Windows.Forms.TextBox txtDiaChi;
@@ -329,5 +306,18 @@ namespace GUI
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
     }
 }

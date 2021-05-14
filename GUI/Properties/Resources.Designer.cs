@@ -63,6 +63,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("Add_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_user {
             get {
                 object obj = ResourceManager.GetObject("add-user", resourceCulture);
@@ -183,6 +193,96 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cancel_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("Cancel_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cancel_32x321 {
+            get {
+                object obj = ResourceManager.GetObject("Cancel_32x321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clock {
+            get {
+                object obj = ResourceManager.GetObject("clock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clock2 {
+            get {
+                object obj = ResourceManager.GetObject("clock2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clocl1 {
+            get {
+                object obj = ResourceManager.GetObject("clocl1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Delete_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("Delete_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DeleteHeader_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("DeleteHeader_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Edit_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("Edit_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EditTask_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("EditTask_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_chuyển_nhà_400x400 {
             get {
                 object obj = ResourceManager.GetObject("icon-chuyển-nhà-400x400", resourceCulture);
@@ -266,6 +366,16 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap user__1_1 {
             get {
                 object obj = ResourceManager.GetObject("user (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zoom_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("Zoom_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

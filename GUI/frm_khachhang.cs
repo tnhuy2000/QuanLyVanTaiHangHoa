@@ -39,8 +39,8 @@ namespace GUI
       
             dgvDSKhachHang.Columns["SMaKH"].Width = 80;
             dgvDSKhachHang.Columns["SHoTen"].Width = 150;
-            dgvDSKhachHang.Columns["SDiaChi"].Width = 220;
-            dgvDSKhachHang.Columns["SDienThoai"].Width = 100;
+            dgvDSKhachHang.Columns["SDiaChi"].Width = 200;
+            dgvDSKhachHang.Columns["SDienThoai"].Width = 120;
             dgvDSKhachHang.Columns["SCmnd"].Width = 100;
             
         }
@@ -78,6 +78,11 @@ namespace GUI
             }
             HienThiDSKhachHangLenDatagrid();
             MessageBox.Show("Đã thêm khách hàng.");
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

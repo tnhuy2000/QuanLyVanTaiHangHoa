@@ -25,9 +25,11 @@ namespace GUI
             if (progressBar1.Value == progressBar1.Maximum)
             {
                 timer1.Enabled = false;
-                this.Dispose();
-                frm_dangnhap frm = new frm_dangnhap();
-                frm.ShowDialog();
+                //this.Dispose();
+                this.Close();
+                
+                
+                
             }
         }
     }

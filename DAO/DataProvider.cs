@@ -5,19 +5,42 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-
+using System.Xml;
+using System.Windows.Forms;
 namespace DAO
 {
     class DataProvider
     {
+        public static string m_ConnectString;
         public static SqlConnection MoKetNoi()
         {
-            string s = @"Data Source=.\SQLEXPRESS;Initial Catalog=QLVTHH;Integrated Security=True";
-            SqlConnection KetNoi = new SqlConnection(s);
+            string patch = Application.StartupPath + "\\cauhinh.xml";
+            DocFileCauHinh(patch);
+            SqlConnection KetNoi = new SqlConnection(m_ConnectString);
             KetNoi.Open();
             return KetNoi;
         }
+        //doc file xml
+        public static void DocFileCauHinh(string patch)
+        {
+            XmlTextReader reader = new XmlTextReader(patch);
+            reader.MoveToElement();
+            while (reader.Read())
+            {
+                if (reader.NodeType == XmlNodeType.Element && reader.Name == "cauhinh")
+                {
+                    while (reader.Read())
+                    {
+                        if (reader.NodeType == XmlNodeType.Element && reader.Name == "connectStr")
+                        {
+                            DataProvider.m_ConnectString = reader.ReadString();
+                            break;
+                        }
+                    }
 
+                }
+            }
+        }
         public static void DongKetNoi(SqlConnection KetNoi)
         {
             KetNoi.Close();

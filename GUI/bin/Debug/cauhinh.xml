@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<cauhinh>
+	<servername>ADMIN\SQLSERVER</servername>
+	<database>QLVTHH</database>
+	<username>sa</username>
+	<password>sql2014</password>
+	<connectStr>Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QLVTHH;
+	Integrated Security=True;</connectStr>
+</cauhinh>
