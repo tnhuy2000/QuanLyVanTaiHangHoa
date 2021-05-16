@@ -40,6 +40,7 @@ namespace GUI
             this.mnu_KhachHang = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_TaiXe = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_NghiepVu = new System.Windows.Forms.ToolStripMenuItem();
+            this.vậnTảiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_BaoCao = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_HuongDan = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -53,16 +54,11 @@ namespace GUI
             this.dockPanel6 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel6_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
-            this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
-            this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.mnuStrip_QuanLy.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.dockPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
-            this.dockPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnuStrip_QuanLy
@@ -93,27 +89,27 @@ namespace GUI
             // mnu_DangKy
             // 
             this.mnu_DangKy.Name = "mnu_DangKy";
-            this.mnu_DangKy.Size = new System.Drawing.Size(180, 22);
+            this.mnu_DangKy.Size = new System.Drawing.Size(145, 22);
             this.mnu_DangKy.Text = "Đăng ký";
             this.mnu_DangKy.Click += new System.EventHandler(this.mnu_DangKy_Click);
             // 
             // mnu_DoiMatKhau
             // 
             this.mnu_DoiMatKhau.Name = "mnu_DoiMatKhau";
-            this.mnu_DoiMatKhau.Size = new System.Drawing.Size(180, 22);
+            this.mnu_DoiMatKhau.Size = new System.Drawing.Size(145, 22);
             this.mnu_DoiMatKhau.Text = "Đổi mật khẩu";
             // 
             // mnu_DangXuat
             // 
             this.mnu_DangXuat.Name = "mnu_DangXuat";
-            this.mnu_DangXuat.Size = new System.Drawing.Size(180, 22);
+            this.mnu_DangXuat.Size = new System.Drawing.Size(145, 22);
             this.mnu_DangXuat.Text = "Đăng xuất";
             this.mnu_DangXuat.Click += new System.EventHandler(this.mnu_DangXuat_Click);
             // 
             // mnu_Thoat
             // 
             this.mnu_Thoat.Name = "mnu_Thoat";
-            this.mnu_Thoat.Size = new System.Drawing.Size(180, 22);
+            this.mnu_Thoat.Size = new System.Drawing.Size(145, 22);
             this.mnu_Thoat.Text = "Thoát";
             this.mnu_Thoat.Click += new System.EventHandler(this.mnu_Thoat_Click);
             // 
@@ -129,21 +125,29 @@ namespace GUI
             // mnu_KhachHang
             // 
             this.mnu_KhachHang.Name = "mnu_KhachHang";
-            this.mnu_KhachHang.Size = new System.Drawing.Size(180, 22);
+            this.mnu_KhachHang.Size = new System.Drawing.Size(137, 22);
             this.mnu_KhachHang.Text = "Khách hàng";
             this.mnu_KhachHang.Click += new System.EventHandler(this.mnuKhachHang_Click);
             // 
             // mnu_TaiXe
             // 
             this.mnu_TaiXe.Name = "mnu_TaiXe";
-            this.mnu_TaiXe.Size = new System.Drawing.Size(180, 22);
+            this.mnu_TaiXe.Size = new System.Drawing.Size(137, 22);
             this.mnu_TaiXe.Text = "Tài xế";
             // 
             // mnu_NghiepVu
             // 
+            this.mnu_NghiepVu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vậnTảiToolStripMenuItem});
             this.mnu_NghiepVu.Name = "mnu_NghiepVu";
             this.mnu_NghiepVu.Size = new System.Drawing.Size(74, 20);
             this.mnu_NghiepVu.Text = "Nghiệp vụ";
+            // 
+            // vậnTảiToolStripMenuItem
+            // 
+            this.vậnTảiToolStripMenuItem.Name = "vậnTảiToolStripMenuItem";
+            this.vậnTảiToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.vậnTảiToolStripMenuItem.Text = "Vận tải";
             // 
             // mnu_BaoCao
             // 
@@ -163,7 +167,7 @@ namespace GUI
             this.lblHienThiNguoiDung,
             this.toolStripStatusLabel1,
             this.tssDatetime});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 447);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 496);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.statusStrip1.Size = new System.Drawing.Size(843, 22);
@@ -245,55 +249,19 @@ namespace GUI
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // dockManager1
-            // 
-            this.dockManager1.Form = this;
-            this.dockManager1.RootPanels.AddRange(new DevExpress.XtraBars.Docking.DockPanel[] {
-            this.dockPanel1});
-            this.dockManager1.TopZIndexControls.AddRange(new string[] {
-            "DevExpress.XtraBars.BarDockControl",
-            "DevExpress.XtraBars.StandaloneBarDockControl",
-            "System.Windows.Forms.MenuStrip",
-            "System.Windows.Forms.StatusStrip",
-            "System.Windows.Forms.StatusBar",
-            "DevExpress.XtraBars.Ribbon.RibbonStatusBar",
-            "DevExpress.XtraBars.Ribbon.RibbonControl",
-            "DevExpress.XtraBars.Navigation.OfficeNavigationBar",
-            "DevExpress.XtraBars.Navigation.TileNavPane",
-            "DevExpress.XtraBars.TabFormControl",
-            "DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl",
-            "DevExpress.XtraBars.ToolbarForm.ToolbarFormControl"});
-            // 
-            // dockPanel1
-            // 
-            this.dockPanel1.Controls.Add(this.dockPanel1_Container);
-            this.dockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Top;
-            this.dockPanel1.ID = new System.Guid("9e173481-dc9f-4868-add9-b0f87ee6829f");
-            this.dockPanel1.Location = new System.Drawing.Point(0, 24);
-            this.dockPanel1.Name = "dockPanel1";
-            this.dockPanel1.OriginalSize = new System.Drawing.Size(200, 423);
-            this.dockPanel1.Size = new System.Drawing.Size(843, 423);
-            this.dockPanel1.Text = "dockPanel1";
-            // 
-            // dockPanel1_Container
-            // 
-            this.dockPanel1_Container.Location = new System.Drawing.Point(3, 26);
-            this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(837, 394);
-            this.dockPanel1_Container.TabIndex = 0;
-            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(843, 469);
-            this.Controls.Add(this.dockPanel1);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(843, 518);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.mnuStrip_QuanLy);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_main";
             this.Load += new System.EventHandler(this.frm_main_Load);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.frm_main_KeyUp);
@@ -304,8 +272,6 @@ namespace GUI
             this.contextMenuStrip1.ResumeLayout(false);
             this.dockPanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
-            this.dockPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,8 +302,6 @@ namespace GUI
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel lblHienThiNguoiDung;
         private System.Windows.Forms.ToolStripMenuItem mnu_TaiXe;
-        private DevExpress.XtraBars.Docking.DockManager dockManager1;
-        private DevExpress.XtraBars.Docking.DockPanel dockPanel1;
-        private DevExpress.XtraBars.Docking.ControlContainer dockPanel1_Container;
+        private System.Windows.Forms.ToolStripMenuItem vậnTảiToolStripMenuItem;
     }
 }

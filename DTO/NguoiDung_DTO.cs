@@ -29,5 +29,11 @@ namespace DTO
             get { return maquyen; }
             set { maquyen = value; }
         }
+        private string tenquyen;
+        public string Tenquyen
+        {
+            get { return tenquyen; }
+            set { tenquyen = value; }
+        }
     }
 }

@@ -17,20 +17,22 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void XuLy_timer_Tick(object sender, EventArgs e)
         {
-            
-            progressBar1.Increment(1);
-            lblComplete.Text = progressBar1.Value.ToString() + "%";
-            if (progressBar1.Value == progressBar1.Maximum)
+            progressBar.Increment(1);
+            lblComplete.Text = progressBar.Value.ToString() + "%";
+            if (progressBar.Value == progressBar.Maximum)
             {
-                timer1.Enabled = false;
+                XuLy_timer.Enabled = false;
                 //this.Dispose();
                 this.Close();
-                
-                
-                
             }
+        }
+
+        private void frm_flash_Load(object sender, EventArgs e)
+        {
+            XuLy_timer.Enabled = true;
+            XuLy_timer.Interval =50;
         }
     }
 }

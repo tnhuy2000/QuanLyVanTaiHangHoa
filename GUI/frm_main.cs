@@ -128,7 +128,7 @@ namespace GUI
 
         private void mnu_DangKy_Click(object sender, EventArgs e)
         {
-            frm_QuanLyNguoiDung f = new frm_QuanLyNguoiDung();
+            frm_quanlinguoidung f = new frm_quanlinguoidung();
             ViewChildForm(f);
         }
 

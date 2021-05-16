@@ -15,7 +15,7 @@ namespace DAO
         //tìm thông tin người dùng theo mật khẩu
         public static NguoiDung_DTO Tim_Nguoi_Dung_Theo_Mat_Khau(string ma)
         {
-            string sTruyVan = string.Format(@"select * from nguoidung where matkhau=N'{0}'", ma);
+            string sTruyVan = string.Format(@"select tendangnhap,matkhau,n.maquyen,nh.tenquyen from nguoidung n, nhomquyenhan nh where n.matkhau=N'{0}' and nh.maquyen = n.maquyen", ma);
             con = DataProvider.MoKetNoi();
             DataTable dt = DataProvider.TruyVanLayDuLieu(sTruyVan, con);
             if (dt.Rows.Count == 0)
@@ -27,6 +27,8 @@ namespace DAO
             nd.Tendangnhap = dt.Rows[0]["tendangnhap"].ToString();
             nd.Matkhau = dt.Rows[0]["matkhau"].ToString();
             nd.Maquyen = dt.Rows[0]["maquyen"].ToString();
+            nd.Tenquyen = dt.Rows[0]["tenquyen"].ToString();
+
 
             DataProvider.DongKetNoi(con);
             return nd;

@@ -12,9 +12,9 @@ using BUS;
 
 namespace GUI
 {
-    public partial class frm_QuanLyNguoiDung : Form
+    public partial class frm_quanlinguoidung : Form
     {
-        public frm_QuanLyNguoiDung()
+        public frm_quanlinguoidung()
         {
             InitializeComponent();
         }
@@ -26,12 +26,27 @@ namespace GUI
             dgvDSNguoiDung.Columns["Tendangnhap"].HeaderText = "Tên đăng nhập";
             dgvDSNguoiDung.Columns["Matkhau"].HeaderText = "Mật khẩu";
             dgvDSNguoiDung.Columns["Maquyen"].HeaderText = "Mã quyền";
+            dgvDSNguoiDung.Columns["Tenquyen"].HeaderText = "Tên quyền";
 
             dgvDSNguoiDung.Columns["Tendangnhap"].Width = 100;
             dgvDSNguoiDung.Columns["Matkhau"].Width = 100;
             dgvDSNguoiDung.Columns["Maquyen"].Width = 100;
+            dgvDSNguoiDung.Columns["Tenquyen"].Width = 100;
 
-
+            // Hiển thị tên chức vụ tương ứng
+            /*string tenquyen;
+            DataGridViewColumn clTenQuyen = new DataGridViewColumn();
+            DataGridViewCell cell = new DataGridViewTextBoxCell();
+            clTenQuyen.CellTemplate = cell;
+            clTenQuyen.Name = "Tenquyen";
+            clTenQuyen.HeaderText = "Tên quyền";
+            clTenQuyen.Width = 150;
+            dgvDSNguoiDung.Columns.Add(clTenQuyen);
+            for (int i = 0; i < dgvDSNguoiDung.RowCount; i++)
+            {
+                tenquyen = NhomQuyen_BUS.LayTenQuyenTheoMa(dgvDSNguoiDung.Rows[i].Cells["Maquyen"].Value.ToString());
+                dgvDSNguoiDung.Rows[i].Cells["Tenquyen"].Value = tenquyen;
+            }*/
 
         }
 
@@ -40,9 +55,14 @@ namespace GUI
             // Datagrid người dùng
             HienThiDSNguoiDungLenDatagrid();
             //hiển thị combobox
-            cboQuyen.DataSource = NhomQuyen_BUS.Load_DSCV();
-            cboQuyen.DisplayMember = "tenquyen";
-            cboQuyen.ValueMember = "maquyen";
+           
+
+            List<NhomQuyen_DTO> lstQuyen = NhomQuyen_BUS.LayQuyen();
+            cboQuyen.DataSource = lstQuyen;
+            cboQuyen.DisplayMember = "Tenquyen";
+            cboQuyen.ValueMember = "Maquyen";
+
+
             txtMatKhau.UseSystemPasswordChar = true;
             txtNhapLaiMatKhau.UseSystemPasswordChar = true;
         }

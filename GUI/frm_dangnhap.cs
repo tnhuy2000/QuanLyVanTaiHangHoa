@@ -63,6 +63,7 @@ namespace GUI
                         case "admin":
                             this.Hide();
                             MessageBox.Show("Đăng nhập thành công với quyền admin");
+                            WriteLog.Write(txtTenDangNhap.Text, "Đăng nhập thành công");
                             frm_main f1 = new frm_main(txtTenDangNhap.Text);
                             f1.Admin();
                             f1.Show();
@@ -72,6 +73,7 @@ namespace GUI
                             this.Hide();
                             MessageBox.Show("Đăng nhập thành công!");
                             frm_main f2 = new frm_main(txtTenDangNhap.Text);
+                            WriteLog.Write(txtTenDangNhap.Text, "Đăng nhập thành công");
                             f2.KeToan();
                             f2.Show();
                             break;
@@ -79,21 +81,20 @@ namespace GUI
                             this.Hide();
                             MessageBox.Show("Đăng nhập thành công!");
                             frm_main f3 = new frm_main(txtTenDangNhap.Text);
+                            WriteLog.Write(txtTenDangNhap.Text, "Đăng nhập thành công");
                             f3.KinhDoanh();
                             f3.Show();
                             break;
                         default:
                             MessageBox.Show("Lỗi!", "Thông báo", MessageBoxButtons.OK);
+                            WriteLog.Write(txtTenDangNhap.Text, "Đăng nhập không thành công ");
                             break;
                     }
                 }
             }
 
         }
-        public void ChucNang()
-        {
-
-        }
+       
         private void ckHienMK_CheckedChanged(object sender, EventArgs e)
         {
             

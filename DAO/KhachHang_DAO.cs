@@ -55,7 +55,7 @@ namespace DAO
             DataProvider.DongKetNoi(con);
             return kq;
         }
-        public static bool XoaKhachHang(string makh)
+        public static bool XoaKhachHang(KhachHang_DTO makh)
         {
             string sTruyVan = string.Format(@"Delete from khachhang where makh = N'{0}'", makh);
             con = DataProvider.MoKetNoi();

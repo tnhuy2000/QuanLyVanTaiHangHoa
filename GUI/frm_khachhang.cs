@@ -80,8 +80,76 @@ namespace GUI
             MessageBox.Show("Đã thêm khách hàng.");
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btnThem_Click(object sender, EventArgs e)
         {
+            if (txtMaKH.Text == "" || txtHoTen.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ dữ liệu!");
+                return;
+            }
+            else
+            {
+                // Kiểm tra mã khách hàng có độ dài chuỗi hợp lệ hay không
+                if (txtMaKH.Text.Length > 5)
+                {
+                    MessageBox.Show("Mã khách hàng tối đa 5 ký tự!");
+                    return;
+                }
+                else
+                {
+                    // Kiểm tra mã khách hàng có bị trùng không
+                    if (KhachHang_BUS.TimKhachHangTheoMa(txtMaKH.Text) != null)
+                    {
+                        MessageBox.Show("Mã khách hàng đã tồn tại!");
+                        return;
+                    }
+                    else
+                    {
+                        KhachHang_DTO kh = new KhachHang_DTO();
+                        kh.SMaKH = txtMaKH.Text;
+                        kh.SHoTen = txtHoTen.Text;
+                        kh.SDiaChi = txtDiaChi.Text;
+
+                        kh.SDienThoai = txtDienThoai.Text;
+                        kh.SCmnd = txtCmnd.Text;
+                        if (KhachHang_BUS.ThemKhachHang(kh) == false)
+                        {
+                            MessageBox.Show("Không thêm được.");
+                            return;
+                        }
+                        HienThiDSKhachHangLenDatagrid();
+                        MessageBox.Show("Đã thêm khách hàng.");
+                    }    
+                }    
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            KhachHang_DTO kh = new KhachHang_DTO();
+            kh.SMaKH = txtMaKH.Text;
+            
+            if (KhachHang_BUS.XoaKhachHang(kh) == true)
+            {
+                HienThiDSKhachHangLenDatagrid();
+                MessageBox.Show("Đã xóa khách hàng.");
+            }
+            else
+            {
+                MessageBox.Show("Không xóa được.");
+                return;
+            }
+        }
+
+        private void dgvDSKhachHang_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow r = new DataGridViewRow();
+            r = dgvDSKhachHang.SelectedRows[0];
+            txtMaKH.Text = r.Cells["SMaKH"].Value.ToString();
+            txtHoTen.Text = r.Cells["SHoTen"].Value.ToString();
+            txtDiaChi.Text = r.Cells["SDiaChi"].Value.ToString();
+            txtDienThoai.Text = r.Cells["SDienThoai"].Value.ToString();
+            txtCmnd.Text = r.Cells["SCmnd"].Value.ToString();
 
         }
     }

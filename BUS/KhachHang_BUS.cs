@@ -22,7 +22,7 @@ namespace BUS
         {
             return KhachHang_DAO.SuaKhachHang(kh);
         }
-        public static bool XoaKhachHang(string kh)
+        public static bool XoaKhachHang(KhachHang_DTO kh)
         {
             return KhachHang_DAO.XoaKhachHang(kh);
         }
