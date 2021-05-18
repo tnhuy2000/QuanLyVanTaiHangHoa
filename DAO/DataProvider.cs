@@ -7,7 +7,8 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Xml;
 using System.Windows.Forms;
-
+namespace DAO
+{
     class DataProvider
     {
         public static string m_ConnectString;
@@ -71,4 +72,5 @@ using System.Windows.Forms;
         }
 
     }
+}
 

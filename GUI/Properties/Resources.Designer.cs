@@ -333,6 +333,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Role_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("Role_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tuyenduong_icon {
             get {
                 object obj = ResourceManager.GetObject("tuyenduong_icon", resourceCulture);

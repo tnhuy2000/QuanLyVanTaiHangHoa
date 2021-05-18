@@ -28,6 +28,9 @@ namespace GUI
                 return;
 
             }
+            Encode mahoa = new Encode();
+            string password_mahoa = mahoa.Encrypt(txtMatKhau.Text);
+            
 
             // kiem tra người dùng 
             if (NguoiDung_BUS.Tim_Nguoi_Dung_Theo_Tai_Khoan(txtTenDangNhap.Text) == null)
@@ -38,18 +41,19 @@ namespace GUI
             }
 
             // kiem tra mật khẩu 
-            if (NguoiDung_BUS.Tim_Nguoi_Dung_Theo_Mat_Khau_Kiem_Tra(txtTenDangNhap.Text, txtMatKhau.Text) == null)
+            if (NguoiDung_BUS.Tim_Nguoi_Dung_Theo_Mat_Khau_Kiem_Tra(txtTenDangNhap.Text, password_mahoa) == null)
             {
                 MessageBox.Show("Mật khẩu không đúng!");
                 return;
             }
             NguoiDung_DTO nd = new NguoiDung_DTO();
-            nd.Tendangnhap = txtTenDangNhap.Text;
-            nd.Matkhau = txtMatKhau.Text;
+            nd.STenDangNhap = txtTenDangNhap.Text;
+            nd.SMatKhau = password_mahoa;
 
             if (NguoiDung_BUS.Tim_Nguoi_Dung_Theo_Tai_Khoan(txtTenDangNhap.Text) == null)
             {
                 MessageBox.Show("Đăng nhập không thành công");
+
                 return;
 
             }
@@ -67,23 +71,25 @@ namespace GUI
                             frm_main f1 = new frm_main(txtTenDangNhap.Text);
                             f1.Admin();
                             f1.Show();
-                            
+                            WriteLog.Write(txtTenDangNhap.Text, "Mở form frm_main");
                             break;
                         case "KT":
                             this.Hide();
                             MessageBox.Show("Đăng nhập thành công!");
                             frm_main f2 = new frm_main(txtTenDangNhap.Text);
-                            WriteLog.Write(txtTenDangNhap.Text, "Đăng nhập thành công");
+                            WriteLog.Write(txtTenDangNhap.Text, "Đăng nhập");
                             f2.KeToan();
                             f2.Show();
+                            WriteLog.Write(txtTenDangNhap.Text, "Mở form frm_main");
                             break;
                         case "KD":
                             this.Hide();
                             MessageBox.Show("Đăng nhập thành công!");
                             frm_main f3 = new frm_main(txtTenDangNhap.Text);
-                            WriteLog.Write(txtTenDangNhap.Text, "Đăng nhập thành công");
+                            WriteLog.Write(txtTenDangNhap.Text, "Đăng nhập");
                             f3.KinhDoanh();
                             f3.Show();
+                            WriteLog.Write(txtTenDangNhap.Text, "Mở form frm_main");
                             break;
                         default:
                             MessageBox.Show("Lỗi!", "Thông báo", MessageBoxButtons.OK);
@@ -137,7 +143,12 @@ namespace GUI
             DialogResult tr;
             tr = MessageBox.Show("Bạn có muốn thoát chương trình hay không?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (tr == DialogResult.OK)
+            {
                 Application.Exit();
+                WriteLog.Write(txtTenDangNhap.Text, "Thoát chương trình");
+            }    
+                
+
         }
     }
 }

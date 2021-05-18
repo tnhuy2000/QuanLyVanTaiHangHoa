@@ -42,15 +42,12 @@ namespace BUS
         {
             return NguoiDung_DAO.SuaNguoiDung(kh);
         }
-        public static bool XoaNguoiDung(string kh)
+        public static bool XoaNguoiDung(NguoiDung_DTO kh)
         {
             return NguoiDung_DAO.XoaNguoiDung(kh);
         }
 
-        //Lay Danh sach nguoi dung
-        public static List<NguoiDung_DTO> LayDSNguoiDung()
-        {
-            return NguoiDung_DAO.LayDSNguoiDung();
-        }
+        
+        
     }
 }

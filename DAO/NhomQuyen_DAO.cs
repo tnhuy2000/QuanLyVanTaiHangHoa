@@ -24,8 +24,8 @@ namespace DAO
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 NhomQuyen_DTO q = new NhomQuyen_DTO();
-                q.Maquyen = dt.Rows[i]["maquyen"].ToString();
-                q.Tenquyen = dt.Rows[i]["tenquyen"].ToString();
+                q.SMaQuyen = dt.Rows[i]["maquyen"].ToString();
+                q.STenQuyen = dt.Rows[i]["tenquyen"].ToString();
                
                 lstNhomQuyen.Add(q);
             }

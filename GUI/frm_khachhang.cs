@@ -15,15 +15,20 @@ namespace GUI
 {
     public partial class frm_khachhang : Form
     {
-        public frm_khachhang()
+        public static string ten;
+        public frm_khachhang(string tendangnhap)
         {
             InitializeComponent();
+            ten = tendangnhap;
         }
 
         private void frm_khachhang_Load(object sender, EventArgs e)
         {
             // Datagrid nhân viên
             HienThiDSKhachHangLenDatagrid();
+            cboTimKiem.Items.Add("Theo mã khách hàng");
+            cboTimKiem.Items.Add("Theo tên khách hàng");
+            this.cboTimKiem.SelectedItem = "Theo tên khách hàng";
         }
 
         private void HienThiDSKhachHangLenDatagrid()
@@ -45,40 +50,7 @@ namespace GUI
             
         }
 
-        private void mi_Them_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            if (txtMaKH.Text == "" || txtHoTen.Text == "")
-            {
-                MessageBox.Show("Vui lòng nhập đầy đủ dữ liệu!");
-                return;
-            }
-            // Kiểm tra mã khách hàng có độ dài chuỗi hợp lệ hay không
-            if (txtMaKH.Text.Length > 5)
-            {
-                MessageBox.Show("Mã khách hàng tối đa 5 ký tự!");
-                return;
-            }
-            // Kiểm tra mã khách hàng có bị trùng không
-            if (KhachHang_BUS.TimKhachHangTheoMa(txtMaKH.Text) != null)
-            {
-                MessageBox.Show("Mã nhân viên đã tồn tại!");
-                return;
-            }
-            KhachHang_DTO kh = new KhachHang_DTO();
-            kh.SMaKH = txtMaKH.Text;
-            kh.SHoTen = txtHoTen.Text;
-            kh.SDiaChi = txtDiaChi.Text;
-
-            kh.SDienThoai =txtDienThoai.Text;
-            kh.SCmnd = txtCmnd.Text;
-            if (KhachHang_BUS.ThemKhachHang(kh) == false)
-            {
-                MessageBox.Show("Không thêm được.");
-                return;
-            }
-            HienThiDSKhachHangLenDatagrid();
-            MessageBox.Show("Đã thêm khách hàng.");
-        }
+        
 
         private void btnThem_Click(object sender, EventArgs e)
         {
@@ -90,9 +62,9 @@ namespace GUI
             else
             {
                 // Kiểm tra mã khách hàng có độ dài chuỗi hợp lệ hay không
-                if (txtMaKH.Text.Length > 5)
+                if (txtMaKH.Text.Length > 6)
                 {
-                    MessageBox.Show("Mã khách hàng tối đa 5 ký tự!");
+                    MessageBox.Show("Mã khách hàng tối đa 6 ký tự!");
                     return;
                 }
                 else
@@ -119,6 +91,7 @@ namespace GUI
                         }
                         HienThiDSKhachHangLenDatagrid();
                         MessageBox.Show("Đã thêm khách hàng.");
+                        WriteLog.Write(ten, "Đã thêm khách hàng có mã số: "+txtMaKH.Text);
                     }    
                 }    
             }
@@ -126,18 +99,37 @@ namespace GUI
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            KhachHang_DTO kh = new KhachHang_DTO();
-            kh.SMaKH = txtMaKH.Text;
-            
-            if (KhachHang_BUS.XoaKhachHang(kh) == true)
+            // kiểm tra mã có tồn tại
+            if (txtMaKH.Text == "" || KhachHang_BUS.TimKhachHangTheoMa(txtMaKH.Text) == null)
             {
-                HienThiDSKhachHangLenDatagrid();
-                MessageBox.Show("Đã xóa khách hàng.");
+                MessageBox.Show("Vui lòng chọn mã khách hàng!");
+                return;
             }
             else
             {
-                MessageBox.Show("Không xóa được.");
-                return;
+                DialogResult tr;
+                tr = MessageBox.Show("Bạn có muốn xoá khách hàng này không?", "Thông báo", MessageBoxButtons.OKCancel
+                    , MessageBoxIcon.Question);
+                if(tr==DialogResult.OK)
+                {
+                    KhachHang_DTO kh = new KhachHang_DTO();
+                    kh.SMaKH = txtMaKH.Text;
+                    kh.SHoTen = txtHoTen.Text;
+                    kh.SDienThoai = txtDienThoai.Text;
+                    kh.SDiaChi = txtDiaChi.Text;
+                    kh.SCmnd = txtCmnd.Text;
+
+                    if (KhachHang_BUS.XoaKhachHang(kh) == true)
+                    {
+                        HienThiDSKhachHangLenDatagrid();
+                        MessageBox.Show("Đã xóa khách hàng.");
+                        WriteLog.Write(ten, "Đã xoá khách hàng có mã số: " + txtMaKH.Text);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không xóa được.");
+                    }
+                }    
             }
         }
 
@@ -151,6 +143,87 @@ namespace GUI
             txtDienThoai.Text = r.Cells["SDienThoai"].Value.ToString();
             txtCmnd.Text = r.Cells["SCmnd"].Value.ToString();
 
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            // kiểm tra mã có tồn tại
+            if (txtMaKH.Text == "" || KhachHang_BUS.TimKhachHangTheoMa(txtMaKH.Text) == null)
+            {
+                MessageBox.Show("Vui lòng chọn mã khách hàng!");
+                return;
+            }
+            else
+            {
+                DialogResult tr;
+                tr = MessageBox.Show("Bạn có muốn sửa khách hàng này không?", "Thông báo", MessageBoxButtons.OKCancel
+                    , MessageBoxIcon.Question);
+                if (tr == DialogResult.OK)
+                {
+                    KhachHang_DTO kh = new KhachHang_DTO();
+                    kh.SMaKH = txtMaKH.Text;
+                    kh.SHoTen = txtHoTen.Text;
+                    kh.SDiaChi = txtDiaChi.Text;
+                    kh.SDienThoai = txtDienThoai.Text;
+                    kh.SCmnd = txtCmnd.Text;
+
+                    if (KhachHang_BUS.SuaKhachHang(kh) == true)
+                    {
+                        HienThiDSKhachHangLenDatagrid();
+                        MessageBox.Show("Đã cập nhật thông tin khách hàng.");
+                        WriteLog.Write(ten, "Đã cập nhật khách hàng có mã số: " + txtMaKH.Text);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không cập nhật được.");
+                    }
+                }
+            }
+        }
+        
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if(cboTimKiem.SelectedItem.ToString()=="Theo mã khách hàng")
+            {
+                string ma = txtTimKiem.Text;
+
+                List<KhachHang_DTO> lstnv1 = KhachHang_BUS.TimKhachHangTheoMaKH(ma);
+                if (lstnv1 == null)
+                {
+                    MessageBox.Show("Không tìm thấy!");
+                    return;
+                }
+                dgvDSKhachHang.DataSource = lstnv1;
+            }
+            else if(cboTimKiem.SelectedItem.ToString() == "Theo tên khách hàng")
+            {
+                string ten = txtTimKiem.Text;
+
+                List<KhachHang_DTO> lstnv = KhachHang_BUS.TimKhachHangTheoTen(ten);
+                if (lstnv == null)
+                {
+                    MessageBox.Show("Không tìm thấy!");
+                    return;
+                }
+                dgvDSKhachHang.DataSource = lstnv;
+            }    
+            
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult tr;
+            tr = MessageBox.Show("Bạn có muốn đóng form!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (tr == DialogResult.OK)
+            {
+                this.Close();
+                WriteLog.Write(ten, "Đã đóng form Khách Hàng");
+            }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            HienThiDSKhachHangLenDatagrid();
         }
     }
 }

@@ -8,32 +8,37 @@ namespace DTO
 {
     public class NguoiDung_DTO
     {
-        public string tendangnhap;
+        private string stendangnhap;
 
-        public string Tendangnhap
+        public string STenDangNhap
         {
-            get { return tendangnhap; }
-            set { tendangnhap = value; }
+            get { return stendangnhap; }
+            set { stendangnhap = value; }
+        }
+        private string shoten;
+        public string SHoTen
+        {
+            get { return shoten; }
+            set { shoten = value; }
+        }
+        private string smatkhau;
+        public string SMatKhau
+        {
+            get { return smatkhau; }
+            set { smatkhau = value; }
+        }
+        private string smaquyen;
+        public string SMaQuyen
+        {
+            get { return smaquyen; }
+            set { smaquyen = value; }
         }
 
-
-        public string matkhau;
-        public string Matkhau
+        private string stenquyen;
+        public string STenQuyen
         {
-            get { return matkhau; }
-            set { matkhau = value; }
-        }
-        public string maquyen;
-        public string Maquyen
-        {
-            get { return maquyen; }
-            set { maquyen = value; }
-        }
-        private string tenquyen;
-        public string Tenquyen
-        {
-            get { return tenquyen; }
-            set { tenquyen = value; }
+            get { return stenquyen; }
+            set { stenquyen = value; }
         }
     }
 }

@@ -8,17 +8,17 @@ namespace DTO
 {
     public class NhomQuyen_DTO
     {
-        public string maquyen;
+        private string maquyen;
 
-        public string Maquyen
+        public string SMaQuyen
         {
             get { return maquyen; }
             set { maquyen = value; }
         }
 
-        public string tenquyen;
+        private string tenquyen;
 
-        public string Tenquyen
+        public string STenQuyen
         {
             get { return tenquyen; }
             set { tenquyen = value; }

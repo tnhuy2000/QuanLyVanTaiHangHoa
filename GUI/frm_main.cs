@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BUS; 
 namespace GUI
 {
     public partial class frm_main : Form
@@ -17,8 +17,9 @@ namespace GUI
         {
             InitializeComponent();
             ten = tendangnhap;
-        }
 
+        }
+        
         private void timer1_Tick(object sender, EventArgs e)
         {
             //Lay ngày giờ hiện tại hệ thống
@@ -44,7 +45,8 @@ namespace GUI
 
         private void mnuKhachHang_Click(object sender, EventArgs e)
         {
-            frm_khachhang f = new frm_khachhang();
+            frm_khachhang f = new frm_khachhang(ten);
+            WriteLog.Write(ten, "Mở form Khách Hàng");
             ViewChildForm(f);
         }
 
@@ -128,7 +130,8 @@ namespace GUI
 
         private void mnu_DangKy_Click(object sender, EventArgs e)
         {
-            frm_quanlinguoidung f = new frm_quanlinguoidung();
+            frm_dangky f = new frm_dangky(ten);
+            WriteLog.Write(ten, "Mở form Đăng ký");
             ViewChildForm(f);
         }
 
@@ -136,6 +139,7 @@ namespace GUI
         {
             this.Close();
             frm_dangnhap dn = new frm_dangnhap();
+            WriteLog.Write(ten, "Đăng xuất");
             dn.Show();   
         }
 
@@ -144,7 +148,11 @@ namespace GUI
             DialogResult tr;
             tr = MessageBox.Show("Bạn có muốn thoát chương trình hay không?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (tr == DialogResult.OK)
+            {
                 Application.Exit();
+                WriteLog.Write(ten, "Thoát chương trình");
+            }    
+                
         }
 
         private void frm_main_KeyUp(object sender, KeyEventArgs e)
@@ -156,6 +164,31 @@ namespace GUI
                     mnu_Thoat_Click(null, null);
                 }
             }
+        }
+
+        private void mnu_TaiXe_Click(object sender, EventArgs e)
+        {
+            frm_taixe f = new frm_taixe(ten);
+            WriteLog.Write(ten, "Mở form Tài Xế");
+            ViewChildForm(f);
+        }
+        private void mnuDauXe_Click(object sender, EventArgs e)
+        {
+            frm_dauxe f = new frm_dauxe(ten);
+            WriteLog.Write(ten, "Mở form Đàu Xe");
+            ViewChildForm(f);
+        }
+
+        private void mnuHangHoa_Click(object sender, EventArgs e)
+        {
+            frm_hanghoa f = new frm_hanghoa(ten);
+            WriteLog.Write(ten, "Mở form Hàng Hoá");
+            ViewChildForm(f);
+        }
+
+        private void mnuStrip_QuanLy_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

@@ -48,7 +48,7 @@ namespace DAO
         }
         public static bool SuaKhachHang(KhachHang_DTO kh)
         {
-            string sTruyVan = string.Format(@"update khachhang set hoten = N'{1}', diachi = N'{2}',dienthoai = N'{3}',cmnd = N'{4}' where manv = N'{0}'",
+            string sTruyVan = string.Format(@"update khachhang set hoten = N'{1}', diachi = N'{2}',dienthoai = N'{3}',cmnd = N'{4}' where makh = N'{0}'",
             kh.SMaKH, kh.SHoTen, kh.SDiaChi, kh.SDienThoai, kh.SCmnd);
             con = DataProvider.MoKetNoi();
             bool kq = DataProvider.TruyVanKhongLayDuLieu(sTruyVan, con);
@@ -57,7 +57,7 @@ namespace DAO
         }
         public static bool XoaKhachHang(KhachHang_DTO makh)
         {
-            string sTruyVan = string.Format(@"Delete from khachhang where makh = N'{0}'", makh);
+            string sTruyVan = string.Format(@"Delete from khachhang where makh = N'{0}'", makh.SMaKH);
             con = DataProvider.MoKetNoi();
             bool kq = DataProvider.TruyVanKhongLayDuLieu(sTruyVan, con);
             DataProvider.DongKetNoi(con);
@@ -82,6 +82,55 @@ namespace DAO
 
             DataProvider.DongKetNoi(con);
             return kh;
+        }
+        public static List<KhachHang_DTO> TimKhachHangTheoTen(string ten)
+        {
+            string sTruyVan = string.Format(@"select * from khachhang where hoten like
+            N'%{0}%' ", ten);
+            con = DataProvider.MoKetNoi();
+            DataTable dt = DataProvider.TruyVanLayDuLieu(sTruyVan, con);
+            if (dt.Rows.Count == 0)
+            {
+                return null;
+            }
+            List<KhachHang_DTO> lstNhanVien = new List<DTO.KhachHang_DTO>();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                KhachHang_DTO nv = new KhachHang_DTO();
+                nv.SMaKH = dt.Rows[i]["makh"].ToString();
+                nv.SHoTen = dt.Rows[i]["hoten"].ToString();
+                nv.SDiaChi = dt.Rows[i]["diachi"].ToString();
+                nv.SDienThoai = dt.Rows[i]["dienthoai"].ToString();
+                nv.SCmnd = dt.Rows[i]["cmnd"].ToString();
+               
+                lstNhanVien.Add(nv);
+            }
+            DataProvider.DongKetNoi(con);
+            return lstNhanVien;
+        }
+        public static List<KhachHang_DTO> TimKhachHangTheoMaKH(string ma)
+        {
+            string sTruyVan = string.Format(@"select * from khachhang where makh like N'%{0}%' ", ma);
+            con = DataProvider.MoKetNoi();
+            DataTable dt = DataProvider.TruyVanLayDuLieu(sTruyVan, con);
+            if (dt.Rows.Count == 0)
+            {
+                return null;
+            }
+            List<KhachHang_DTO> lstNhanVien = new List<DTO.KhachHang_DTO>();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                KhachHang_DTO nv = new KhachHang_DTO();
+                nv.SMaKH = dt.Rows[i]["makh"].ToString();
+                nv.SHoTen = dt.Rows[i]["hoten"].ToString();
+                nv.SDiaChi = dt.Rows[i]["diachi"].ToString();
+                nv.SDienThoai = dt.Rows[i]["dienthoai"].ToString();
+                nv.SCmnd = dt.Rows[i]["cmnd"].ToString();
+
+                lstNhanVien.Add(nv);
+            }
+            DataProvider.DongKetNoi(con);
+            return lstNhanVien;
         }
     }
 }

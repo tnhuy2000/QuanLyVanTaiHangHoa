@@ -327,4 +327,8 @@ E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\de\DevExpress.Diagram.v20.1.Core.resou
 E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\es\DevExpress.Diagram.v20.1.Core.resources.dll
 E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\ja\DevExpress.Diagram.v20.1.Core.resources.dll
 E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\ru\DevExpress.Diagram.v20.1.Core.resources.dll
-E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_quanlinguoidung.resources
+E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_giaima.resources
+E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_taixe.resources
+E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_hanghoa.resources
+E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_dangky.resources
+E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_dauxe.resources

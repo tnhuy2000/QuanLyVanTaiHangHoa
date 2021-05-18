@@ -32,9 +32,9 @@ namespace BUS
 
             data.Add(new log()
             {
-                user = nguoithuchien,
-                namelog = tenLog,
-                datetime = DateTime.Now.ToString()
+                nguoidung = nguoithuchien,
+                tenlog = tenLog,
+                ngaygio = DateTime.Now.ToString()
             });
             StreamWriter streamWriter = new StreamWriter(new FileStream(day, FileMode.Create));
             xml.Serialize(streamWriter, data);
@@ -43,8 +43,8 @@ namespace BUS
     }
     public class log
     {
-        public string user { get; set; }
-        public string namelog { get; set; }
-        public string datetime { get; set; }
+        public string nguoidung { get; set; }
+        public string tenlog { get; set; }
+        public string ngaygio { get; set; }
     }
 }

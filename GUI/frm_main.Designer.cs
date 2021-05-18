@@ -34,11 +34,14 @@ namespace GUI
             this.mnuHeThong = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_DangKy = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_DoiMatKhau = new System.Windows.Forms.ToolStripMenuItem();
+            this.mãHoáVàGiảiMãToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_DangXuat = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_Thoat = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_DanhMuc = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_KhachHang = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_TaiXe = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuHangHoa = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuDauXe = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_NghiepVu = new System.Windows.Forms.ToolStripMenuItem();
             this.vậnTảiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_BaoCao = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,12 +77,14 @@ namespace GUI
             this.mnuStrip_QuanLy.Size = new System.Drawing.Size(843, 24);
             this.mnuStrip_QuanLy.TabIndex = 0;
             this.mnuStrip_QuanLy.Text = "mnuStrip_QuanLy";
+            this.mnuStrip_QuanLy.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mnuStrip_QuanLy_ItemClicked);
             // 
             // mnuHeThong
             // 
             this.mnuHeThong.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnu_DangKy,
             this.mnu_DoiMatKhau,
+            this.mãHoáVàGiảiMãToolStripMenuItem,
             this.mnu_DangXuat,
             this.mnu_Thoat});
             this.mnuHeThong.Name = "mnuHeThong";
@@ -88,28 +93,38 @@ namespace GUI
             // 
             // mnu_DangKy
             // 
+            this.mnu_DangKy.Image = global::GUI.Properties.Resources.Role_32x32;
             this.mnu_DangKy.Name = "mnu_DangKy";
-            this.mnu_DangKy.Size = new System.Drawing.Size(145, 22);
+            this.mnu_DangKy.Size = new System.Drawing.Size(171, 22);
             this.mnu_DangKy.Text = "Đăng ký";
             this.mnu_DangKy.Click += new System.EventHandler(this.mnu_DangKy_Click);
             // 
             // mnu_DoiMatKhau
             // 
+            this.mnu_DoiMatKhau.Image = global::GUI.Properties.Resources.padlock1;
             this.mnu_DoiMatKhau.Name = "mnu_DoiMatKhau";
-            this.mnu_DoiMatKhau.Size = new System.Drawing.Size(145, 22);
+            this.mnu_DoiMatKhau.Size = new System.Drawing.Size(171, 22);
             this.mnu_DoiMatKhau.Text = "Đổi mật khẩu";
+            // 
+            // mãHoáVàGiảiMãToolStripMenuItem
+            // 
+            this.mãHoáVàGiảiMãToolStripMenuItem.Name = "mãHoáVàGiảiMãToolStripMenuItem";
+            this.mãHoáVàGiảiMãToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.mãHoáVàGiảiMãToolStripMenuItem.Text = "Mã hoá và giải mã";
             // 
             // mnu_DangXuat
             // 
+            this.mnu_DangXuat.Image = global::GUI.Properties.Resources.Cancel_32x321;
             this.mnu_DangXuat.Name = "mnu_DangXuat";
-            this.mnu_DangXuat.Size = new System.Drawing.Size(145, 22);
+            this.mnu_DangXuat.Size = new System.Drawing.Size(171, 22);
             this.mnu_DangXuat.Text = "Đăng xuất";
             this.mnu_DangXuat.Click += new System.EventHandler(this.mnu_DangXuat_Click);
             // 
             // mnu_Thoat
             // 
+            this.mnu_Thoat.Image = global::GUI.Properties.Resources.Cancel_32x321;
             this.mnu_Thoat.Name = "mnu_Thoat";
-            this.mnu_Thoat.Size = new System.Drawing.Size(145, 22);
+            this.mnu_Thoat.Size = new System.Drawing.Size(171, 22);
             this.mnu_Thoat.Text = "Thoát";
             this.mnu_Thoat.Click += new System.EventHandler(this.mnu_Thoat_Click);
             // 
@@ -117,7 +132,9 @@ namespace GUI
             // 
             this.mnu_DanhMuc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnu_KhachHang,
-            this.mnu_TaiXe});
+            this.mnu_TaiXe,
+            this.mnuHangHoa,
+            this.mnuDauXe});
             this.mnu_DanhMuc.Name = "mnu_DanhMuc";
             this.mnu_DanhMuc.Size = new System.Drawing.Size(74, 20);
             this.mnu_DanhMuc.Text = "Danh mục";
@@ -134,6 +151,21 @@ namespace GUI
             this.mnu_TaiXe.Name = "mnu_TaiXe";
             this.mnu_TaiXe.Size = new System.Drawing.Size(137, 22);
             this.mnu_TaiXe.Text = "Tài xế";
+            this.mnu_TaiXe.Click += new System.EventHandler(this.mnu_TaiXe_Click);
+            // 
+            // mnuHangHoa
+            // 
+            this.mnuHangHoa.Name = "mnuHangHoa";
+            this.mnuHangHoa.Size = new System.Drawing.Size(137, 22);
+            this.mnuHangHoa.Text = "Hàng hoá";
+            this.mnuHangHoa.Click += new System.EventHandler(this.mnuHangHoa_Click);
+            // 
+            // mnuDauXe
+            // 
+            this.mnuDauXe.Name = "mnuDauXe";
+            this.mnuDauXe.Size = new System.Drawing.Size(137, 22);
+            this.mnuDauXe.Text = "Đầu xe";
+            this.mnuDauXe.Click += new System.EventHandler(this.mnuDauXe_Click);
             // 
             // mnu_NghiepVu
             // 
@@ -263,6 +295,7 @@ namespace GUI
             this.Name = "frm_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_main";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_main_Load);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.frm_main_KeyUp);
             this.mnuStrip_QuanLy.ResumeLayout(false);
@@ -303,5 +336,8 @@ namespace GUI
         private System.Windows.Forms.ToolStripStatusLabel lblHienThiNguoiDung;
         private System.Windows.Forms.ToolStripMenuItem mnu_TaiXe;
         private System.Windows.Forms.ToolStripMenuItem vậnTảiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuHangHoa;
+        private System.Windows.Forms.ToolStripMenuItem mnuDauXe;
+        private System.Windows.Forms.ToolStripMenuItem mãHoáVàGiảiMãToolStripMenuItem;
     }
 }

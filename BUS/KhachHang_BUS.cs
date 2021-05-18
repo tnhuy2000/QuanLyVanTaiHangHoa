@@ -26,9 +26,20 @@ namespace BUS
         {
             return KhachHang_DAO.XoaKhachHang(kh);
         }
+        
         public static KhachHang_DTO TimKhachHangTheoMa(string ma)
         {
             return KhachHang_DAO.TimKhachHangTheoMa(ma);
+        }
+
+        public static List<KhachHang_DTO> TimKhachHangTheoMaKH(string ma)
+        {
+            return KhachHang_DAO.TimKhachHangTheoMaKH(ma);
+        }
+
+        public static List<KhachHang_DTO> TimKhachHangTheoTen(string ten)
+        {
+            return KhachHang_DAO.TimKhachHangTheoTen(ten);
         }
     }
 }
