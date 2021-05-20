@@ -336,5 +336,20 @@ namespace GUI
                     MessageBox.Show("Thất bại");
             }
         }
+
+        private void mnu_LapHoaDonVT_Click(object sender, EventArgs e)
+        {
+            frm_hoadon f = new frm_hoadon(ten);
+            WriteLog.Write(ten, "Mở form Lập Hoá Đơn");
+            //ghi file log
+            StreamWriter writer = new StreamWriter("test.txt", true);
+            string chuoi = " ";
+            string getdate = DateTime.Now.ToString();
+            chuoi = "\n****    Vào lúc: " + getdate + " ---Tài khoản: " + ten + " --->Đã Mở form Lập Hoá Đơn";
+            writer.WriteLine(chuoi);
+            writer.Close();
+            ////
+            ViewChildForm(f);
+        }
     }
 }

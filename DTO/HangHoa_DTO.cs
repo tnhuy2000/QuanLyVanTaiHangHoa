@@ -38,13 +38,7 @@ namespace DTO
             get { return gia; }
             set { gia = value; }
         }
-        private int soluong;
-
-        public int SSoLuong
-        {
-            get { return soluong; }
-            set { soluong = value; }
-        }
+        
 
     }
 }

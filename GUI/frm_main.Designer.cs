@@ -36,6 +36,9 @@ namespace GUI
             this.mnu_DoiMatKhau = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_DangXuat = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_Thoat = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnutool_saoluu_phuchoi = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnu_SaoLuu = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnu_PhucHoi = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_DanhMuc = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_KhachHang = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_TaiXe = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,9 +63,6 @@ namespace GUI
             this.dockPanel6 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel6_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.mnutool_saoluu_phuchoi = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_SaoLuu = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu_PhucHoi = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuStrip_QuanLy.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -104,7 +104,7 @@ namespace GUI
             // 
             this.mnu_DangKy.Image = global::GUI.Properties.Resources.Role_32x32;
             this.mnu_DangKy.Name = "mnu_DangKy";
-            this.mnu_DangKy.Size = new System.Drawing.Size(180, 22);
+            this.mnu_DangKy.Size = new System.Drawing.Size(146, 22);
             this.mnu_DangKy.Text = "Đăng ký";
             this.mnu_DangKy.Click += new System.EventHandler(this.mnu_DangKy_Click);
             // 
@@ -112,14 +112,14 @@ namespace GUI
             // 
             this.mnu_DoiMatKhau.Image = global::GUI.Properties.Resources.padlock1;
             this.mnu_DoiMatKhau.Name = "mnu_DoiMatKhau";
-            this.mnu_DoiMatKhau.Size = new System.Drawing.Size(180, 22);
+            this.mnu_DoiMatKhau.Size = new System.Drawing.Size(146, 22);
             this.mnu_DoiMatKhau.Text = "Đổi mật khẩu";
             // 
             // mnu_DangXuat
             // 
             this.mnu_DangXuat.Image = global::GUI.Properties.Resources.Cancel_32x321;
             this.mnu_DangXuat.Name = "mnu_DangXuat";
-            this.mnu_DangXuat.Size = new System.Drawing.Size(180, 22);
+            this.mnu_DangXuat.Size = new System.Drawing.Size(146, 22);
             this.mnu_DangXuat.Text = "Đăng xuất";
             this.mnu_DangXuat.Click += new System.EventHandler(this.mnu_DangXuat_Click);
             // 
@@ -127,9 +127,32 @@ namespace GUI
             // 
             this.mnu_Thoat.Image = global::GUI.Properties.Resources.Cancel_32x321;
             this.mnu_Thoat.Name = "mnu_Thoat";
-            this.mnu_Thoat.Size = new System.Drawing.Size(180, 22);
+            this.mnu_Thoat.Size = new System.Drawing.Size(146, 22);
             this.mnu_Thoat.Text = "Thoát";
             this.mnu_Thoat.Click += new System.EventHandler(this.mnu_Thoat_Click);
+            // 
+            // mnutool_saoluu_phuchoi
+            // 
+            this.mnutool_saoluu_phuchoi.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnu_SaoLuu,
+            this.mnu_PhucHoi});
+            this.mnutool_saoluu_phuchoi.Name = "mnutool_saoluu_phuchoi";
+            this.mnutool_saoluu_phuchoi.Size = new System.Drawing.Size(127, 20);
+            this.mnutool_saoluu_phuchoi.Text = "Sao lưu và phục hồi";
+            // 
+            // mnu_SaoLuu
+            // 
+            this.mnu_SaoLuu.Name = "mnu_SaoLuu";
+            this.mnu_SaoLuu.Size = new System.Drawing.Size(121, 22);
+            this.mnu_SaoLuu.Text = "Sao lưu";
+            this.mnu_SaoLuu.Click += new System.EventHandler(this.mnu_SaoLuu_Click);
+            // 
+            // mnu_PhucHoi
+            // 
+            this.mnu_PhucHoi.Name = "mnu_PhucHoi";
+            this.mnu_PhucHoi.Size = new System.Drawing.Size(121, 22);
+            this.mnu_PhucHoi.Text = "Phục hồi";
+            this.mnu_PhucHoi.Click += new System.EventHandler(this.mnu_PhucHoi_Click);
             // 
             // mnu_DanhMuc
             // 
@@ -146,35 +169,35 @@ namespace GUI
             // mnu_KhachHang
             // 
             this.mnu_KhachHang.Name = "mnu_KhachHang";
-            this.mnu_KhachHang.Size = new System.Drawing.Size(180, 22);
+            this.mnu_KhachHang.Size = new System.Drawing.Size(138, 22);
             this.mnu_KhachHang.Text = "Khách hàng";
             this.mnu_KhachHang.Click += new System.EventHandler(this.mnuKhachHang_Click);
             // 
             // mnu_TaiXe
             // 
             this.mnu_TaiXe.Name = "mnu_TaiXe";
-            this.mnu_TaiXe.Size = new System.Drawing.Size(180, 22);
+            this.mnu_TaiXe.Size = new System.Drawing.Size(138, 22);
             this.mnu_TaiXe.Text = "Tài xế";
             this.mnu_TaiXe.Click += new System.EventHandler(this.mnu_TaiXe_Click);
             // 
             // mnuHangHoa
             // 
             this.mnuHangHoa.Name = "mnuHangHoa";
-            this.mnuHangHoa.Size = new System.Drawing.Size(180, 22);
+            this.mnuHangHoa.Size = new System.Drawing.Size(138, 22);
             this.mnuHangHoa.Text = "Hàng hoá";
             this.mnuHangHoa.Click += new System.EventHandler(this.mnuHangHoa_Click);
             // 
             // mnuDauXe
             // 
             this.mnuDauXe.Name = "mnuDauXe";
-            this.mnuDauXe.Size = new System.Drawing.Size(180, 22);
+            this.mnuDauXe.Size = new System.Drawing.Size(138, 22);
             this.mnuDauXe.Text = "Đầu xe";
             this.mnuDauXe.Click += new System.EventHandler(this.mnuDauXe_Click);
             // 
             // mnu_NhanVien
             // 
             this.mnu_NhanVien.Name = "mnu_NhanVien";
-            this.mnu_NhanVien.Size = new System.Drawing.Size(180, 22);
+            this.mnu_NhanVien.Size = new System.Drawing.Size(138, 22);
             this.mnu_NhanVien.Text = "Nhân viên";
             this.mnu_NhanVien.Click += new System.EventHandler(this.mnu_NhanVien_Click);
             // 
@@ -192,6 +215,7 @@ namespace GUI
             this.mnu_LapHoaDonVT.Name = "mnu_LapHoaDonVT";
             this.mnu_LapHoaDonVT.Size = new System.Drawing.Size(191, 22);
             this.mnu_LapHoaDonVT.Text = "Lập hoá đơn vận tải";
+            this.mnu_LapHoaDonVT.Click += new System.EventHandler(this.mnu_LapHoaDonVT_Click);
             // 
             // mnu_tuyenduong
             // 
@@ -326,29 +350,6 @@ namespace GUI
             this.xtraTabbedMdiManager1.AppearancePage.Header.Options.UseForeColor = true;
             this.xtraTabbedMdiManager1.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPagesAndTabControlHeader;
             this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // mnutool_saoluu_phuchoi
-            // 
-            this.mnutool_saoluu_phuchoi.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnu_SaoLuu,
-            this.mnu_PhucHoi});
-            this.mnutool_saoluu_phuchoi.Name = "mnutool_saoluu_phuchoi";
-            this.mnutool_saoluu_phuchoi.Size = new System.Drawing.Size(127, 20);
-            this.mnutool_saoluu_phuchoi.Text = "Sao lưu và phục hồi";
-            // 
-            // mnu_SaoLuu
-            // 
-            this.mnu_SaoLuu.Name = "mnu_SaoLuu";
-            this.mnu_SaoLuu.Size = new System.Drawing.Size(180, 22);
-            this.mnu_SaoLuu.Text = "Sao lưu";
-            this.mnu_SaoLuu.Click += new System.EventHandler(this.mnu_SaoLuu_Click);
-            // 
-            // mnu_PhucHoi
-            // 
-            this.mnu_PhucHoi.Name = "mnu_PhucHoi";
-            this.mnu_PhucHoi.Size = new System.Drawing.Size(180, 22);
-            this.mnu_PhucHoi.Text = "Phục hồi";
-            this.mnu_PhucHoi.Click += new System.EventHandler(this.mnu_PhucHoi_Click);
             // 
             // frm_main
             // 

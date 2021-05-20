@@ -39,17 +39,15 @@ namespace GUI
             this.txtMaHH = new System.Windows.Forms.TextBox();
             this.txtTenHH = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtgia = new System.Windows.Forms.TextBox();
+            this.txtdonvitinh = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtdonvitinh = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtsoluong = new System.Windows.Forms.TextBox();
-            this.txtgia = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSHangHoa)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -138,12 +136,10 @@ namespace GUI
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtsoluong);
             this.groupBox1.Controls.Add(this.txtgia);
             this.groupBox1.Controls.Add(this.txtdonvitinh);
             this.groupBox1.Controls.Add(this.txtTenHH);
             this.groupBox1.Controls.Add(this.txtMaHH);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
@@ -154,6 +150,38 @@ namespace GUI
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
+            // 
+            // txtgia
+            // 
+            this.txtgia.Location = new System.Drawing.Point(115, 123);
+            this.txtgia.Name = "txtgia";
+            this.txtgia.Size = new System.Drawing.Size(182, 21);
+            this.txtgia.TabIndex = 15;
+            // 
+            // txtdonvitinh
+            // 
+            this.txtdonvitinh.Location = new System.Drawing.Point(115, 87);
+            this.txtdonvitinh.Name = "txtdonvitinh";
+            this.txtdonvitinh.Size = new System.Drawing.Size(182, 21);
+            this.txtdonvitinh.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(23, 122);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 15);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Giá:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(23, 93);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 15);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Đơn vị tính:";
             // 
             // label3
             // 
@@ -200,54 +228,6 @@ namespace GUI
             this.label4.TabIndex = 14;
             this.label4.Text = "Tìm kiếm tên hàng hoá";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 93);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 15);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Đơn vị tính:";
-            // 
-            // txtdonvitinh
-            // 
-            this.txtdonvitinh.Location = new System.Drawing.Point(115, 87);
-            this.txtdonvitinh.Name = "txtdonvitinh";
-            this.txtdonvitinh.Size = new System.Drawing.Size(83, 21);
-            this.txtdonvitinh.TabIndex = 15;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(204, 93);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 15);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Số lượng:";
-            // 
-            // txtsoluong
-            // 
-            this.txtsoluong.Location = new System.Drawing.Point(269, 87);
-            this.txtsoluong.Name = "txtsoluong";
-            this.txtsoluong.Size = new System.Drawing.Size(75, 21);
-            this.txtsoluong.TabIndex = 15;
-            // 
-            // txtgia
-            // 
-            this.txtgia.Location = new System.Drawing.Point(115, 123);
-            this.txtgia.Name = "txtgia";
-            this.txtgia.Size = new System.Drawing.Size(162, 21);
-            this.txtgia.TabIndex = 15;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(23, 122);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 15);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Giá:";
-            // 
             // frm_hanghoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -293,9 +273,7 @@ namespace GUI
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtsoluong;
         private System.Windows.Forms.TextBox txtdonvitinh;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtgia;
         private System.Windows.Forms.Label label7;

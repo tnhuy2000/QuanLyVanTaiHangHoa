@@ -31,7 +31,7 @@ namespace DAO
                 kh.STenHang = dt.Rows[i]["tenhang"].ToString();
                 kh.SDvt = dt.Rows[i]["donvitinh"].ToString();
                 kh.SGia = int.Parse(dt.Rows[i]["gia"].ToString());
-                kh.SSoLuong = int.Parse(dt.Rows[i]["soluong"].ToString());
+                
 
 
                 lstHangHoa.Add(kh);
@@ -41,8 +41,8 @@ namespace DAO
         }
         public static bool ThemHangHoa(HangHoa_DTO kh)
         {
-            string sTruyVan = string.Format(@"insert into hanghoa values(N'{0}',N'{1}',N'{2}','{3}','{4}')",
-            kh.SMaHang, kh.STenHang,kh.SDvt,kh.SGia,kh.SSoLuong);
+            string sTruyVan = string.Format(@"insert into hanghoa values(N'{0}',N'{1}',N'{2}','{3}')",
+            kh.SMaHang, kh.STenHang,kh.SDvt,kh.SGia);
             con = DataProvider.MoKetNoi();
             bool kq = DataProvider.TruyVanKhongLayDuLieu(sTruyVan, con);
             DataProvider.DongKetNoi(con);
@@ -50,8 +50,8 @@ namespace DAO
         }
         public static bool SuaHangHoa(HangHoa_DTO kh)
         {
-            string sTruyVan = string.Format(@"update hanghoa set tenhang = N'{1}', donvitinh = N'{2}' , gia ='{3}', soluong='{4}' where mahanghoa = N'{0}'",
-            kh.SMaHang, kh.STenHang,kh.SDvt,kh.SGia,kh.SSoLuong);
+            string sTruyVan = string.Format(@"update hanghoa set tenhang = N'{1}', donvitinh = N'{2}' , gia ='{3}' where mahanghoa = N'{0}'",
+            kh.SMaHang, kh.STenHang,kh.SDvt,kh.SGia);
             con = DataProvider.MoKetNoi();
             bool kq = DataProvider.TruyVanKhongLayDuLieu(sTruyVan, con);
             DataProvider.DongKetNoi(con);
@@ -80,7 +80,7 @@ namespace DAO
             kh.STenHang = dt.Rows[0]["tenhang"].ToString();
             kh.SDvt = dt.Rows[0]["donvitinh"].ToString();
             kh.SGia = int.Parse(dt.Rows[0]["gia"].ToString());
-            kh.SSoLuong = int.Parse(dt.Rows[0]["soluong"].ToString());
+            
 
             DataProvider.DongKetNoi(con);
             return kh;
@@ -103,7 +103,7 @@ namespace DAO
                 nv.STenHang = dt.Rows[i]["tenhang"].ToString();
                 nv.SDvt = dt.Rows[i]["donvitinh"].ToString();
                 nv.SGia = int.Parse(dt.Rows[i]["gia"].ToString());
-                nv.SSoLuong = int.Parse(dt.Rows[i]["soluong"].ToString());
+                
                 lstHangHoa.Add(nv);
             }
             DataProvider.DongKetNoi(con);

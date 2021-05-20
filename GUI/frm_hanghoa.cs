@@ -34,20 +34,20 @@ namespace GUI
             dgvDSHangHoa.Columns["STenHang"].HeaderText = "Tên hàng hoá";
             dgvDSHangHoa.Columns["SDvt"].HeaderText = "Đơn vị tính";
             dgvDSHangHoa.Columns["SGia"].HeaderText = "Giá";
-            dgvDSHangHoa.Columns["SSoLuong"].HeaderText = "Số lượng";
+            
             
 
             dgvDSHangHoa.Columns["SMaHang"].Width = 80;
             dgvDSHangHoa.Columns["STenHang"].Width = 150;
             dgvDSHangHoa.Columns["SDvt"].Width = 80;
             dgvDSHangHoa.Columns["SGia"].Width = 100;
-            dgvDSHangHoa.Columns["SSoLuong"].Width = 50;
+            
 
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (txtMaHH.Text == "" || txtTenHH.Text == ""||txtdonvitinh.Text==""||txtgia.Text==""||txtsoluong.Text=="")
+            if (txtMaHH.Text == "" || txtTenHH.Text == ""||txtdonvitinh.Text==""||txtgia.Text=="")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ dữ liệu!");
                 return;
@@ -75,7 +75,7 @@ namespace GUI
                         kh.STenHang = txtTenHH.Text;
                         kh.SDvt = txtdonvitinh.Text;
                         kh.SGia = int.Parse(txtgia.Text);
-                        kh.SSoLuong = int.Parse(txtsoluong.Text);
+                        
 
                         if (HangHoa_BUS.ThemHangHoa(kh) == false)
                         {
@@ -110,7 +110,7 @@ namespace GUI
                     kh.STenHang = txtTenHH.Text;
                     kh.SDvt = txtdonvitinh.Text;
                     kh.SGia = int.Parse(txtgia.Text);
-                    kh.SSoLuong = int.Parse(txtsoluong.Text);
+                    
 
                     if (HangHoa_BUS.XoaHangHoa(kh) == true)
                     {
@@ -146,7 +146,7 @@ namespace GUI
                     kh.STenHang = txtTenHH.Text;
                     kh.SDvt = txtdonvitinh.Text;
                     kh.SGia = int.Parse(txtgia.Text);
-                    kh.SSoLuong = int.Parse(txtsoluong.Text);
+                    
 
                     if (HangHoa_BUS.SuaHangHoa(kh) == true)
                     {
@@ -181,7 +181,7 @@ namespace GUI
             txtTenHH.Text = r.Cells["STenHang"].Value.ToString();
             txtdonvitinh.Text = r.Cells["SDvt"].Value.ToString();
             txtgia.Text = r.Cells["SGia"].Value.ToString();
-            txtsoluong.Text = r.Cells["SSoLuong"].Value.ToString();
+            
             
         }
 

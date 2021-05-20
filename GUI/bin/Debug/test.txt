@@ -318,3 +318,121 @@
 ****    Vào lúc: 20/5/2021 12:24:14 PM ---Tài khoản: admin --->Đã Mở form Nhân Viên
 
 ****    Vào lúc: 20/5/2021 12:26:32 PM ---Tài khoản: admin --->Đã Mở form Nhân Viên
+
+****    Vào lúc: 20/5/2021 4:07:04 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 7:59:06 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 7:59:19 PM ---Tài khoản: admin --->Đã Mở form Hàng Hoá
+
+****    Vào lúc: 20/5/2021 8:00:20 PM ---Tài khoản: admin --->Đã Mở form Đầu Xe
+
+****    Vào lúc: 20/5/2021 8:03:23 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 8:03:50 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 8:05:10 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 8:05:12 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 8:06:04 PM ---Tài khoản: admin --->Đã Đăng xuất
+
+****    Vào lúc: 20/5/2021 8:08:30 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 8:08:32 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 8:09:24 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 8:09:26 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 8:10:21 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 8:10:23 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 8:12:44 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 8:12:46 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 8:27:23 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 8:27:26 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 8:29:17 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 8:29:19 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 8:33:34 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 8:33:36 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 8:41:15 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 8:41:18 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 8:50:45 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 8:50:49 PM ---Tài khoản: admin --->Đã Mở form Tài Xế
+
+****    Vào lúc: 20/5/2021 8:50:50 PM ---Tài khoản: admin --->Đã Mở form Hàng Hoá
+
+****    Vào lúc: 20/5/2021 8:50:51 PM ---Tài khoản: admin --->Đã Mở form Nhân Viên
+
+****    Vào lúc: 20/5/2021 8:50:52 PM ---Tài khoản: admin --->Đã Mở form Nhân Viên
+
+****    Vào lúc: 20/5/2021 8:51:00 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 8:58:03 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 8:58:06 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 8:59:42 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 8:59:45 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 9:00:33 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 9:00:35 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 9:08:00 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 9:08:04 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 9:10:33 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 9:10:34 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 9:20:59 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 9:21:00 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 9:27:02 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 9:27:04 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 9:29:41 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 9:29:43 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 10:32:38 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 10:32:41 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 10:41:57 PM ---Tài khoản: admin --->Đã Mở form Tài Xế
+
+****    Vào lúc: 20/5/2021 10:42:00 PM ---Tài khoản: admin --->Đã Mở form QL Tuyến Đường
+
+****    Vào lúc: 20/5/2021 10:46:41 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 10:46:43 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 10:53:03 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 10:53:07 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 10:59:44 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 10:59:46 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 20/5/2021 11:01:24 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 20/5/2021 11:01:26 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn

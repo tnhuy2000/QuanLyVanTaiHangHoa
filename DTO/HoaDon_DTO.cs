@@ -40,7 +40,7 @@ namespace DTO
             set { ngaylap = value; }
         }
         private DateTime ngaygiao;
-        public DateTime SNgayGiao
+        public DateTime DtNgayGiao
         {
             get { return ngaygiao; }
             set { ngaygiao = value; }
