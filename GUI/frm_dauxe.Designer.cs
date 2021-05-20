@@ -90,7 +90,7 @@ namespace GUI
             // 
             // dtnamsx
             // 
-            this.dtnamsx.CustomFormat = "dd-mm-yyyy";
+            this.dtnamsx.CustomFormat = "yyyy/mm/dd";
             this.dtnamsx.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtnamsx.Location = new System.Drawing.Point(527, 70);
             this.dtnamsx.Name = "dtnamsx";

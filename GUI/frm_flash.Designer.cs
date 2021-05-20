@@ -40,7 +40,6 @@ namespace GUI
             // XuLy_timer
             // 
             this.XuLy_timer.Enabled = true;
-            this.XuLy_timer.Interval = 50;
             this.XuLy_timer.Tick += new System.EventHandler(this.XuLy_timer_Tick);
             // 
             // progressBar

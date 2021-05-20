@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DangNhap_DTO.cs" />
     <Compile Include="DauXe_DTO.cs" />
     <Compile Include="Encode.cs" />
     <Compile Include="Form1.cs">
@@ -56,12 +55,15 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HangHoa_DTO.cs" />
+    <Compile Include="HoaDon_DTO.cs" />
     <Compile Include="KhachHang_DTO.cs" />
     <Compile Include="NguoiDung_DTO.cs" />
+    <Compile Include="NhanVien_DTO.cs" />
     <Compile Include="NhomQuyen_DTO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaiXe_DTO.cs" />
+    <Compile Include="TuyenDuong_DTO.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

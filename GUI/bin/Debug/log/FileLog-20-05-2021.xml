@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 10:06:30 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>20/5/2021 10:06:30 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 10:19:55 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>20/5/2021 10:19:55 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 10:27:04 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>20/5/2021 10:27:04 AM</ngaygio>
+  </log>
+  <log>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 10:27:06 AM</ngaygio>
+  </log>
+  <log>
+    <tenlog>Thoát chương trình</tenlog>
+    <ngaygio>20/5/2021 10:27:16 AM</ngaygio>
+  </log>
+  <log>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 10:32:59 AM</ngaygio>
+  </log>
+  <log>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 10:34:24 AM</ngaygio>
+  </log>
+  <log>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 10:40:46 AM</ngaygio>
+  </log>
+  <log>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 10:45:38 AM</ngaygio>
+  </log>
+  <log>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 10:51:16 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>Trương Như Ý</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 10:57:59 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 11:33:35 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>20/5/2021 11:33:35 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 11:44:49 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>20/5/2021 11:44:50 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 11:45:47 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>20/5/2021 11:45:47 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 11:51:24 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>20/5/2021 11:51:25 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 11:52:09 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>20/5/2021 11:52:09 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form log</tenlog>
+    <ngaygio>20/5/2021 11:52:13 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Khách Hàng</tenlog>
+    <ngaygio>20/5/2021 11:52:39 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Hàng Hoá</tenlog>
+    <ngaygio>20/5/2021 11:52:42 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form log</tenlog>
+    <ngaygio>20/5/2021 11:52:45 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng xuất</tenlog>
+    <ngaygio>20/5/2021 11:52:58 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>nvkd</nguoidung>
+    <tenlog>Đăng nhập</tenlog>
+    <ngaygio>20/5/2021 11:53:05 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>nvkd</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>20/5/2021 11:53:05 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 12:04:37 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>20/5/2021 12:04:38 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng xuất</tenlog>
+    <ngaygio>20/5/2021 12:04:42 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>nvkt</nguoidung>
+    <tenlog>Đăng nhập</tenlog>
+    <ngaygio>20/5/2021 12:04:49 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>nvkt</nguoidung>
+    <tenlog>Đăng nhập</tenlog>
+    <ngaygio>20/5/2021 12:04:49 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 12:07:40 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>20/5/2021 12:07:40 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form log</tenlog>
+    <ngaygio>20/5/2021 12:07:49 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng xuất</tenlog>
+    <ngaygio>20/5/2021 12:07:54 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>nvkd</nguoidung>
+    <tenlog>Đăng nhập</tenlog>
+    <ngaygio>20/5/2021 12:08:01 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>nvkd</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>20/5/2021 12:08:01 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>20/5/2021 12:23:00 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>20/5/2021 12:23:01 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Khách Hàng</tenlog>
+    <ngaygio>20/5/2021 12:23:09 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Nhân Viên</tenlog>
+    <ngaygio>20/5/2021 12:23:11 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã xoá nhân viên có mã số: NV010</tenlog>
+    <ngaygio>20/5/2021 12:23:24 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã xoá nhân viên có mã số: NV006</tenlog>
+    <ngaygio>20/5/2021 12:23:53 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Nhân Viên</tenlog>
+    <ngaygio>20/5/2021 12:24:14 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã thêm nhân viên có mã số: NV010</tenlog>
+    <ngaygio>20/5/2021 12:24:56 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã thêm nhân viên có mã số: NV011</tenlog>
+    <ngaygio>20/5/2021 12:25:06 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã xoá nhân viên có mã số: NV011</tenlog>
+    <ngaygio>20/5/2021 12:25:56 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã xoá nhân viên có mã số: NV009</tenlog>
+    <ngaygio>20/5/2021 12:26:09 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Nhân Viên</tenlog>
+    <ngaygio>20/5/2021 12:26:32 PM</ngaygio>
+  </log>
+</ArrayOfLog>

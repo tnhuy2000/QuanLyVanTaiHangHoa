@@ -42,6 +42,7 @@
     <Reference Include="DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.DataAccess.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -55,6 +56,7 @@
     <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraCharts.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraCharts.v20.1.Wizard, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDialogs.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -68,6 +70,24 @@
     <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraVerticalGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraWizard.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -126,11 +146,23 @@
     <Compile Include="frm_flash.Designer.cs">
       <DependentUpon>frm_flash.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_hoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_hoadon.Designer.cs">
+      <DependentUpon>frm_hoadon.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_khachhang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_khachhang.Designer.cs">
       <DependentUpon>frm_khachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_log.Designer.cs">
+      <DependentUpon>frm_log.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_main.cs">
       <SubType>Form</SubType>
@@ -138,14 +170,27 @@
     <Compile Include="frm_main.Designer.cs">
       <DependentUpon>frm_main.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_nhanvien.Designer.cs">
+      <DependentUpon>frm_nhanvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_taixe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_taixe.Designer.cs">
       <DependentUpon>frm_taixe.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_tuyenduong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tuyenduong.Designer.cs">
+      <DependentUpon>frm_tuyenduong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="frm_dauxe.resx">
       <DependentUpon>frm_dauxe.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,14 +209,26 @@
     <EmbeddedResource Include="frm_flash.resx">
       <DependentUpon>frm_flash.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_hoadon.resx">
+      <DependentUpon>frm_hoadon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_khachhang.resx">
       <DependentUpon>frm_khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_log.resx">
+      <DependentUpon>frm_log.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_main.resx">
       <DependentUpon>frm_main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_nhanvien.resx">
+      <DependentUpon>frm_nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_taixe.resx">
       <DependentUpon>frm_taixe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tuyenduong.resx">
+      <DependentUpon>frm_tuyenduong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -184,6 +241,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -305,6 +363,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Role_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bghanghoa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feature_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditTask_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -332,3 +332,14 @@ E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_taixe.resources
 E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_hanghoa.resources
 E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_dangky.resources
 E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_dauxe.resources
+E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_nhanvien.resources
+E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_tuyenduong.resources
+E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_hoadon.resources
+E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_log.resources
+E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\DevExpress.Dialogs.v20.1.Core.dll
+E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\DevExpress.XtraDialogs.v20.1.dll
+E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\DevExpress.XtraDialogs.v20.1.xml
+E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\de\DevExpress.Dialogs.v20.1.Core.resources.dll
+E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\es\DevExpress.Dialogs.v20.1.Core.resources.dll
+E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\ja\DevExpress.Dialogs.v20.1.Core.resources.dll
+E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\ru\DevExpress.Dialogs.v20.1.Core.resources.dll

@@ -23,7 +23,7 @@ namespace GUI
 
         private void frm_dauxe_Load(object sender, EventArgs e)
         {
-            
+
             //combobox chucvu
 
             List<TaiXe_DTO> LstChucVu = TaiXe_BUS.LayDSTaiXe();
@@ -65,7 +65,7 @@ namespace GUI
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (txtbienso.Text == "" || txtdungtich.Text == "" ||txtmadauxe.Text==""||txtmauson.Text==""||txttenxe.Text=="")
+            if (txtbienso.Text == "" || txtdungtich.Text == "" || txtmadauxe.Text == "" || txtmauson.Text == "" || txttenxe.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ dữ liệu!");
                 return;
@@ -93,19 +93,20 @@ namespace GUI
                         kh.SBienSo = txtbienso.Text;
                         kh.STenXe = txttenxe.Text;
                         kh.SMauSon = txtmauson.Text;
-                        kh.SDungTich = int.Parse(txtdungtich.Text);
+                        kh.SDungTich = txtdungtich.Text;
                         kh.DtNamSanXuat = DateTime.Parse(dtnamsx.Text);
-
-                        kh.SMaTX = cbotentaixe.SelectedValue.ToString();
+                        MessageBox.Show(kh.DtNamSanXuat.ToString("yyyy/mm/dd"), "Thông báo");
                         
+                        kh.SMaTX = cbotentaixe.SelectedValue.ToString();
                         if (DauXe_BUS.ThemDauXe(kh) == false)
                         {
+
                             MessageBox.Show("Không thêm được.");
                             return;
                         }
                         HienThiDSDauXeLenDatagrid();
-                        MessageBox.Show("Đã thêm tài xế.");
-                        WriteLog.Write(ten, "Đã thêm tài xế có mã số: " + txtmadauxe.Text);
+                        MessageBox.Show("Đã thêm đầu xe.");
+                        WriteLog.Write(ten, "Đã thêm đầu xe có mã số: " + txtmadauxe.Text);
                     }
                 }
             }
@@ -131,7 +132,7 @@ namespace GUI
                     kh.SBienSo = txtbienso.Text;
                     kh.STenXe = txttenxe.Text;
                     kh.SMauSon = txtmauson.Text;
-                    kh.SDungTich = int.Parse(txtdungtich.Text);
+                    kh.SDungTich = txtdungtich.Text;
                     kh.DtNamSanXuat = DateTime.Parse(dtnamsx.Text);
 
                     kh.SMaTX = cbotentaixe.SelectedValue.ToString();
@@ -171,7 +172,7 @@ namespace GUI
                     kh.SBienSo = txtbienso.Text;
                     kh.STenXe = txttenxe.Text;
                     kh.SMauSon = txtmauson.Text;
-                    kh.SDungTich = int.Parse(txtdungtich.Text);
+                    kh.SDungTich = txtdungtich.Text;
                     kh.DtNamSanXuat = DateTime.Parse(dtnamsx.Text);
 
                     kh.SMaTX = cbotentaixe.SelectedValue.ToString();
@@ -220,12 +221,13 @@ namespace GUI
             txttenxe.Text = r.Cells["STenXe"].Value.ToString();
             txtmauson.Text = r.Cells["SMauSon"].Value.ToString();
             txtdungtich.Text = r.Cells["SDungTich"].Value.ToString();
-            
+
             dtnamsx.Text = r.Cells["DtNamSanXuat"].Value.ToString();
             //cbotentaixe.SelectedValue = r.Cells["SMaTaiXe"].Value;
             cbotentaixe.Text = r.Cells["SHoTen"].Value.ToString();
-            
+
 
         }
+
     }
 }

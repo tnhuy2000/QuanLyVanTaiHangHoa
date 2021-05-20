@@ -37,8 +37,8 @@ namespace DTO
         }
 
 
-        private int sdungtich;
-        public int SDungTich
+        private string sdungtich;
+        public string SDungTich
         {
             get { return sdungtich; }
             set { sdungtich = value; }
@@ -57,12 +57,12 @@ namespace DTO
             get { return smatx; }
             set { smatx = value; }
         }
-
-        private string stentaixe;
+        
+        private string shoten;
         public string SHoTen
         {
-            get { return stentaixe; }
-            set { stentaixe = value; }
+            get { return shoten; }
+            set { shoten = value; }
         }
     }
 }

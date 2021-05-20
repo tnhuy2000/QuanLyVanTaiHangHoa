@@ -56,10 +56,14 @@
     <Compile Include="HangHoa_BUS.cs" />
     <Compile Include="KhachHang_BUS.cs" />
     <Compile Include="NguoiDung_BUS.cs" />
+    <Compile Include="NhanVien_BUS.cs" />
     <Compile Include="NhomQuyen_BUS.cs" />
+    <Compile Include="PhucHoiDuLieu_BUS.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaoLuu_BUS.cs" />
     <Compile Include="TaiXe_BUS.cs" />
+    <Compile Include="TuyenDuong_BUS.cs" />
     <Compile Include="WriteLog.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

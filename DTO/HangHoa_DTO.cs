@@ -23,6 +23,28 @@ namespace DTO
             get { return tenhang; }
             set { tenhang = value; }
         }
+        private string donvitinh;
+
+        public string SDvt
+        {
+            get { return donvitinh; }
+            set { donvitinh = value; }
+        }
+
+        private int gia;
+
+        public int SGia
+        {
+            get { return gia; }
+            set { gia = value; }
+        }
+        private int soluong;
+
+        public int SSoLuong
+        {
+            get { return soluong; }
+            set { soluong = value; }
+        }
 
     }
 }

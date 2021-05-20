@@ -30,8 +30,8 @@ namespace DAO
                 kh.SBienSo = dt.Rows[i]["bienso"].ToString();
                 kh.STenXe = dt.Rows[i]["tenxe"].ToString();
                 kh.SMauSon = dt.Rows[i]["mauson"].ToString();
-                kh.SDungTich = int.Parse(dt.Rows[i]["dungtich"].ToString());
-                kh.DtNamSanXuat = DateTime.Parse(dt.Rows[0]["namsx"].ToString());
+                kh.SDungTich = dt.Rows[i]["dungtich"].ToString();
+                kh.DtNamSanXuat = DateTime.Parse(dt.Rows[i]["namsx"].ToString());
                 kh.SMaTX = dt.Rows[i]["mataixe"].ToString();
                 kh.SHoTen = dt.Rows[i]["hoten"].ToString();
                 lstDauXe.Add(kh);
@@ -41,8 +41,8 @@ namespace DAO
         }
         public static bool ThemDauXe(DauXe_DTO kh)
         {
-            string sTruyVan = string.Format(@"insert into dauxe values(N'{0}',N'{1}',N'{2}',N'{3}','{4}','{5}','{6}',)",
-            kh.SMaDX, kh.SBienSo, kh.STenXe, kh.SMauSon, kh.SDungTich, kh.DtNamSanXuat, kh.SMaTX);
+            string sTruyVan = string.Format(@"insert into dauxe values('{0}','{1}',N'{2}',N'{3}','{4}','{5}','{6}')",
+                kh.SMaDX, kh.SBienSo, kh.STenXe, kh.SMauSon, kh.SDungTich, kh.DtNamSanXuat.ToString("yyyy/MM/dd"), kh.SMaTX);
             con = DataProvider.MoKetNoi();
             bool kq = DataProvider.TruyVanKhongLayDuLieu(sTruyVan, con);
             DataProvider.DongKetNoi(con);
@@ -50,16 +50,16 @@ namespace DAO
         }
         public static bool SuaDauXe(DauXe_DTO kh)
         {
-            string sTruyVan = string.Format(@"update dauxe set bienso = N'{1}', tenxe = N'{2}',mauson = N'{3}',dungtich = '{4}',namsx = '{4}',mataixe = N'{5}' where madauxe = N'{0}'",
-            kh.SMaDX, kh.SBienSo, kh.STenXe, kh.SMauSon, kh.SDungTich, kh.DtNamSanXuat, kh.SMaTX);
+            string sTruyVan = string.Format(@"update dauxe set bienso = '{1}', tenxe = N'{2}', mauson = '{3}',dungtich = '{4}',namsx = '{5}',mataixe = '{6}' where madauxe = '{0}'",
+            kh.SMaDX, kh.SBienSo, kh.STenXe, kh.SMauSon, kh.SDungTich, kh.DtNamSanXuat.ToString("yyyy/MM/dd"), kh.SMaTX);
             con = DataProvider.MoKetNoi();
             bool kq = DataProvider.TruyVanKhongLayDuLieu(sTruyVan, con);
             DataProvider.DongKetNoi(con);
             return kq;
         }
-        public static bool XoaDauXe(DauXe_DTO ma)
+        public static bool XoaDauXe(DauXe_DTO dx)
         {
-            string sTruyVan = string.Format(@"Delete from dauxe where madauxe = N'{0}'", ma.SMaDX);
+            string sTruyVan = string.Format(@"delete from dauxe where madauxe='{0}'", dx.SMaDX);
             con = DataProvider.MoKetNoi();
             bool kq = DataProvider.TruyVanKhongLayDuLieu(sTruyVan, con);
             DataProvider.DongKetNoi(con);
@@ -80,7 +80,7 @@ namespace DAO
             kh.SBienSo = dt.Rows[0]["bienso"].ToString();
             kh.STenXe = dt.Rows[0]["tenxe"].ToString();
             kh.SMauSon = dt.Rows[0]["mauson"].ToString();
-            kh.SDungTich = int.Parse(dt.Rows[0]["dungtich"].ToString());
+            kh.SDungTich = dt.Rows[0]["dungtich"].ToString();
             kh.DtNamSanXuat = DateTime.Parse(dt.Rows[0]["namsx"].ToString());
             kh.SMaTX = dt.Rows[0]["mataixe"].ToString();
             
@@ -106,8 +106,8 @@ namespace DAO
                 dx.SBienSo = dt.Rows[i]["bienso"].ToString();
                 dx.STenXe = dt.Rows[i]["tenxe"].ToString();
                 dx.SMauSon = dt.Rows[i]["mauson"].ToString();
-                dx.SDungTich = int.Parse(dt.Rows[i]["dungtich"].ToString());
-                dx.DtNamSanXuat = DateTime.Parse(dt.Rows[0]["namsx"].ToString());
+                dx.SDungTich = dt.Rows[i]["dungtich"].ToString();
+                dx.DtNamSanXuat = DateTime.Parse(dt.Rows[i]["namsx"].ToString());
                 dx.SMaTX = dt.Rows[i]["mataixe"].ToString();
                 
 
@@ -133,7 +133,7 @@ namespace DAO
                 dx.SBienSo = dt.Rows[i]["bienso"].ToString();
                 dx.STenXe = dt.Rows[i]["tenxe"].ToString();
                 dx.SMauSon = dt.Rows[i]["mauson"].ToString();
-                dx.SDungTich = int.Parse(dt.Rows[i]["dungtich"].ToString());
+                dx.SDungTich =dt.Rows[i]["dungtich"].ToString();
                 dx.DtNamSanXuat = DateTime.Parse(dt.Rows[0]["namsx"].ToString());
                 dx.SMaTX = dt.Rows[i]["mataixe"].ToString();
 
