@@ -36,7 +36,18 @@ namespace BUS
         {
             return HoaDon_DAO.TimHoaDonTheoMaHD(ma);
         }
+        public static List<HoaDon_DTO> TimHoaDonTheoTenTuyen(string ma)
+        {
+            return HoaDon_DAO.TimHoaDonTheoTenTuyen(ma);
+        }
+        public static List<HoaDon_DTO> TimHoaDonTheoTenKH(string ma)
+        {
+            return HoaDon_DAO.TimHoaDonTheoTenKH(ma);
+        }
+        public static List<HoaDon_DTO> TimHoaDonTheoTenNV(string ma)
+        {
+            return HoaDon_DAO.TimHoaDonTheoTenNV(ma);
+        }
 
-       
     }
 }

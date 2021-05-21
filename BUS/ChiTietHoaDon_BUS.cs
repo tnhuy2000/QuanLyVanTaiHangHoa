@@ -31,7 +31,7 @@ namespace BUS
             return ChiTietHoaDon_DAO.TimChiTietHoaDonTheoMaHD(mahoadon,mahang);
         }
 
-        public static List<ChiTietHoaDon_DTO> TimChiTietHoaDonTheoMaHD(string ma)
+        public static List<ChiTietHoaDon_DTO> TimChiTietHoaDonTheoMaHoaDon(string ma)
         {
             return ChiTietHoaDon_DAO.TimChiTietHoaDonTheoMaHoaDon(ma);
         }

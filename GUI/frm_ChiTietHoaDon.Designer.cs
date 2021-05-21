@@ -30,7 +30,10 @@ namespace GUI
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbomahoadon = new System.Windows.Forms.ComboBox();
             this.cbotenhanghoa = new System.Windows.Forms.ComboBox();
+            this.txtsoluong = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnThem = new System.Windows.Forms.Button();
@@ -38,10 +41,8 @@ namespace GUI
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.dgvDSCTHH = new System.Windows.Forms.DataGridView();
-            this.txtsoluong = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.cbomahoadon = new System.Windows.Forms.ComboBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSCTHH)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +62,15 @@ namespace GUI
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin hoá đơn:";
             // 
+            // cbomahoadon
+            // 
+            this.cbomahoadon.FormattingEnabled = true;
+            this.cbomahoadon.Location = new System.Drawing.Point(121, 29);
+            this.cbomahoadon.Name = "cbomahoadon";
+            this.cbomahoadon.Size = new System.Drawing.Size(210, 23);
+            this.cbomahoadon.TabIndex = 2;
+            this.cbomahoadon.SelectedIndexChanged += new System.EventHandler(this.cbomahoadon_SelectedIndexChanged);
+            // 
             // cbotenhanghoa
             // 
             this.cbotenhanghoa.FormattingEnabled = true;
@@ -68,6 +78,22 @@ namespace GUI
             this.cbotenhanghoa.Name = "cbotenhanghoa";
             this.cbotenhanghoa.Size = new System.Drawing.Size(210, 23);
             this.cbotenhanghoa.TabIndex = 2;
+            // 
+            // txtsoluong
+            // 
+            this.txtsoluong.Location = new System.Drawing.Point(121, 111);
+            this.txtsoluong.Name = "txtsoluong";
+            this.txtsoluong.Size = new System.Drawing.Size(210, 21);
+            this.txtsoluong.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 110);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 15);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Số lượng:";
             // 
             // label5
             // 
@@ -137,22 +163,6 @@ namespace GUI
             this.dgvDSCTHH.TabIndex = 42;
             this.dgvDSCTHH.Click += new System.EventHandler(this.dgvDSCTHH_Click);
             // 
-            // txtsoluong
-            // 
-            this.txtsoluong.Location = new System.Drawing.Point(121, 111);
-            this.txtsoluong.Name = "txtsoluong";
-            this.txtsoluong.Size = new System.Drawing.Size(210, 21);
-            this.txtsoluong.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 110);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 15);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Số lượng:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -162,19 +172,22 @@ namespace GUI
             this.label4.TabIndex = 0;
             this.label4.Text = "Chi tiết hoá đơn:";
             // 
-            // cbomahoadon
+            // btnRefresh
             // 
-            this.cbomahoadon.FormattingEnabled = true;
-            this.cbomahoadon.Location = new System.Drawing.Point(121, 29);
-            this.cbomahoadon.Name = "cbomahoadon";
-            this.cbomahoadon.Size = new System.Drawing.Size(210, 23);
-            this.cbomahoadon.TabIndex = 2;
+            this.btnRefresh.Location = new System.Drawing.Point(148, 287);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(75, 31);
+            this.btnRefresh.TabIndex = 43;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // frm_ChiTietHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 437);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.dgvDSCTHH);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnThoat);
@@ -209,5 +222,6 @@ namespace GUI
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbomahoadon;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }

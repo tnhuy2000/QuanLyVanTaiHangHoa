@@ -436,3 +436,159 @@
 ****    Vào lúc: 20/5/2021 11:01:24 PM ---Tài khoản: admin --->Đã Đăng Nhập
 
 ****    Vào lúc: 20/5/2021 11:01:26 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 7:12:07 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 7:12:10 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 7:15:37 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 7:18:53 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 7:18:56 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 7:21:59 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 7:22:59 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 7:24:05 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 8:12:26 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 8:12:28 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 8:38:30 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 8:38:32 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 8:41:35 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 9:18:54 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 9:18:56 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 9:26:51 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 9:26:53 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 9:30:38 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 9:30:46 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 9:34:26 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 9:34:31 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 9:38:20 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 9:38:22 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 9:41:42 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 9:41:44 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 9:43:56 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 9:43:57 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 9:57:16 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 9:57:17 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 10:01:47 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 10:01:52 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 10:07:02 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 10:07:03 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 10:11:35 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 10:11:37 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 10:12:48 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 10:17:50 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 10:17:51 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 10:23:48 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 10:23:50 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 10:26:12 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 10:26:14 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 10:29:15 AM ---Tài khoản: admin --->Đã Đăng xuất
+
+****    Vào lúc: 21/5/2021 10:34:43 AM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 10:34:44 AM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 12:43:27 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 12:43:28 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 12:44:54 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 12:44:56 PM ---Tài khoản: admin --->Đã Mở form Lập Hoá Đơn
+
+****    Vào lúc: 21/5/2021 2:23:14 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 2:23:20 PM ---User: admin --->Đã Mở form Thống kê danh sách nhân viên
+
+****    Vào lúc: 21/5/2021 2:25:41 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 2:25:50 PM ---User: admin --->Đã Mở form Thống kê danh sách nhân viên
+
+****    Vào lúc: 21/5/2021 2:30:34 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 2:30:37 PM ---User: admin --->Đã Mở form Thống kê danh sách nhân viên
+
+****    Vào lúc: 21/5/2021 2:42:38 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 2:42:50 PM ---User: admin --->Đã Mở form Thống kê danh sách nhân viên
+
+****    Vào lúc: 21/5/2021 2:44:49 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 2:44:53 PM ---User: admin --->Đã Mở form Thống kê danh sách nhân viên
+
+****    Vào lúc: 21/5/2021 2:47:38 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 2:47:42 PM ---User: admin --->Đã Mở form Thống kê danh sách nhân viên
+
+****    Vào lúc: 21/5/2021 2:54:17 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 2:54:20 PM ---Tài khoản: admin --->Đã Mở form QL Tuyến Đường
+
+****    Vào lúc: 21/5/2021 2:54:24 PM ---User: admin --->Đã Mở form Thống kê danh sách nhân viên
+
+****    Vào lúc: 21/5/2021 2:58:14 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 2:58:17 PM ---User: admin --->Đã Mở form Thống kê danh sách nhân viên
+
+****    Vào lúc: 21/5/2021 3:04:28 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 3:04:34 PM ---User: admin --->Đã Mở form Thống kê danh sách nhân viên
+
+****    Vào lúc: 21/5/2021 3:17:30 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 3:17:34 PM ---User: admin --->Đã Mở form Thống kê danh sách nhân viên
+
+****    Vào lúc: 21/5/2021 3:24:13 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 3:24:17 PM ---User: admin --->Đã Mở form Thống kê danh sách nhân viên
+
+****    Vào lúc: 21/5/2021 3:31:46 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 3:31:49 PM ---Tài khoản: admin --->Đã Mở form QL Tuyến Đường
+
+****    Vào lúc: 21/5/2021 3:31:52 PM ---User: admin --->Đã Mở form Thống kê danh sách nhân viên
+
+****    Vào lúc: 21/5/2021 3:35:16 PM ---Tài khoản: admin --->Đã Đăng Nhập
+
+****    Vào lúc: 21/5/2021 3:35:17 PM ---Tài khoản: admin --->Đã Mở form QL Tuyến Đường
+
+****    Vào lúc: 21/5/2021 3:35:20 PM ---User: admin --->Đã Mở form Thống kê danh sách nhân viên

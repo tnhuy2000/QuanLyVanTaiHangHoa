@@ -351,5 +351,21 @@ namespace GUI
             ////
             ViewChildForm(f);
         }
+
+        private void mnu_TKDSNhanVien_Click(object sender, EventArgs e)
+        {
+            frm_rpHoaDon f = new frm_rpHoaDon();
+            f.Show();
+            WriteLog.Write(ten, "Mở form Thống kê danh sách nhân viên");
+            //ghi file log
+            StreamWriter writer = new StreamWriter("test.txt", true);
+            string chuoi = " ";
+            string getdate = DateTime.Now.ToString();
+            chuoi = "\n****    Vào lúc: " + getdate + " ---User: " + ten + " --->Đã Mở form Thống kê danh sách nhân viên";
+            writer.WriteLine(chuoi);
+            writer.Close();
+            ////
+            
+        }
     }
 }

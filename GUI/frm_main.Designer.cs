@@ -63,6 +63,7 @@ namespace GUI
             this.dockPanel6 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel6_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.mnu_TKDSNhanVien = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuStrip_QuanLy.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -227,7 +228,8 @@ namespace GUI
             // mnu_BaoCao
             // 
             this.mnu_BaoCao.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.báoCáoHoáĐơnToolStripMenuItem});
+            this.báoCáoHoáĐơnToolStripMenuItem,
+            this.mnu_TKDSNhanVien});
             this.mnu_BaoCao.Name = "mnu_BaoCao";
             this.mnu_BaoCao.Size = new System.Drawing.Size(62, 20);
             this.mnu_BaoCao.Text = "Báo cáo";
@@ -235,7 +237,7 @@ namespace GUI
             // báoCáoHoáĐơnToolStripMenuItem
             // 
             this.báoCáoHoáĐơnToolStripMenuItem.Name = "báoCáoHoáĐơnToolStripMenuItem";
-            this.báoCáoHoáĐơnToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.báoCáoHoáĐơnToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.báoCáoHoáĐơnToolStripMenuItem.Text = "Báo cáo hoá đơn";
             // 
             // nhậtKýHệThốngToolStripMenuItem
@@ -351,6 +353,13 @@ namespace GUI
             this.xtraTabbedMdiManager1.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPagesAndTabControlHeader;
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
+            // mnu_TKDSNhanVien
+            // 
+            this.mnu_TKDSNhanVien.Name = "mnu_TKDSNhanVien";
+            this.mnu_TKDSNhanVien.Size = new System.Drawing.Size(243, 22);
+            this.mnu_TKDSNhanVien.Text = "Thống kê danh sách nhân viên";
+            this.mnu_TKDSNhanVien.Click += new System.EventHandler(this.mnu_TKDSNhanVien_Click);
+            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -417,5 +426,6 @@ namespace GUI
         private System.Windows.Forms.ToolStripMenuItem mnutool_saoluu_phuchoi;
         private System.Windows.Forms.ToolStripMenuItem mnu_SaoLuu;
         private System.Windows.Forms.ToolStripMenuItem mnu_PhucHoi;
+        private System.Windows.Forms.ToolStripMenuItem mnu_TKDSNhanVien;
     }
 }

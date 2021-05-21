@@ -50,7 +50,7 @@ namespace GUI
         private void HienThiDSLenDatagrid()
         {
 
-
+            radmahoadon.Checked = true;
             HoaDon_DTO nv = new HoaDon_DTO();
             List<HoaDon_DTO> lstDauXe = HoaDon_BUS.LayDSHoaDon();
             dgvDSHoaDon.DataSource = lstDauXe;
@@ -232,6 +232,63 @@ namespace GUI
         {
             frm_ChiTietHoaDon f = new frm_ChiTietHoaDon(txtmahoadon.Text,ten);
             f.Show();
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (radmahoadon.Checked == true)
+            {
+                string ma = txtTimKiem.Text;
+
+                List<HoaDon_DTO> lstnv1 = HoaDon_BUS.TimHoaDonTheoMaHD(ma);
+                if (lstnv1 == null)
+                {
+                    MessageBox.Show("Không tìm thấy!");
+                    return;
+                }
+                dgvDSHoaDon.DataSource = lstnv1;
+            }
+            else if (radtentuyen.Checked == true)
+            {
+                string ten = txtTimKiem.Text;
+
+                List<HoaDon_DTO> lstnv = HoaDon_BUS.TimHoaDonTheoTenTuyen(ten);
+                if (lstnv == null)
+                {
+                    MessageBox.Show("Không tìm thấy!");
+                    return;
+                }
+                dgvDSHoaDon.DataSource = lstnv;
+            }
+            else if (radtenKH.Checked == true)
+            {
+                string ten = txtTimKiem.Text;
+
+                List<HoaDon_DTO> lstnv = HoaDon_BUS.TimHoaDonTheoTenKH(ten);
+                if (lstnv == null)
+                {
+                    MessageBox.Show("Không tìm thấy!");
+                    return;
+                }
+                dgvDSHoaDon.DataSource = lstnv;
+            }
+            else
+            {
+                string ten = txtTimKiem.Text;
+
+                List<HoaDon_DTO> lstnv = HoaDon_BUS.TimHoaDonTheoTenNV(ten);
+                if (lstnv == null)
+                {
+                    MessageBox.Show("Không tìm thấy!");
+                    return;
+                }
+                dgvDSHoaDon.DataSource = lstnv;
+            }    
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            HienThiDSLenDatagrid();
         }
     }
 }

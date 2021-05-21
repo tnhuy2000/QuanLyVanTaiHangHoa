@@ -95,7 +95,9 @@ namespace DAO
         
         public static List<HoaDon_DTO> TimHoaDonTheoMaHD(string ma)
         {
-            string sTruyVan = string.Format(@"select * from hoadon where mahoadon like N'%{0}%' ", ma);
+            string sTruyVan = string.Format(@"select hd.*,td.tentuyenduong,kh.hoten,nv.tennv 
+            from hoadon hd, tuyenduong td, khachhang kh, nhanvien nv 
+            where hd.mahoadon like N'%{0}%' and hd.matuyenduong=td.matuyenduong and hd.makh=kh.makh and hd.manv=nv.manv  ", ma);
             con = DataProvider.MoKetNoi();
             DataTable dt = DataProvider.TruyVanLayDuLieu(sTruyVan, con);
             if (dt.Rows.Count == 0)
@@ -113,7 +115,101 @@ namespace DAO
                 kh.DtNgayLap = DateTime.Parse(dt.Rows[i]["ngaylap"].ToString());
                 kh.DtNgayGiao = DateTime.Parse(dt.Rows[i]["ngaygiao"].ToString());
                 kh.STongGiaTri = int.Parse(dt.Rows[i]["tonggiatri"].ToString());
+                kh.STenTuyen = dt.Rows[i]["tentuyenduong"].ToString();
+                kh.SHoTenkH = dt.Rows[i]["hoten"].ToString();
+                kh.SHoTenNV = dt.Rows[i]["tennv"].ToString();
 
+                lstNhanVien.Add(kh);
+            }
+            DataProvider.DongKetNoi(con);
+            return lstNhanVien;
+        }
+        public static List<HoaDon_DTO> TimHoaDonTheoTenTuyen(string ma)
+        {
+            string sTruyVan = string.Format(@"select hd.*,td.tentuyenduong,kh.hoten,nv.tennv 
+            from hoadon hd, tuyenduong td, khachhang kh, nhanvien nv 
+            where td.tentuyenduong like N'%{0}%' and hd.matuyenduong=td.matuyenduong and hd.makh=kh.makh and hd.manv=nv.manv ", ma);
+            con = DataProvider.MoKetNoi();
+            DataTable dt = DataProvider.TruyVanLayDuLieu(sTruyVan, con);
+            if (dt.Rows.Count == 0)
+            {
+                return null;
+            }
+            List<HoaDon_DTO> lstNhanVien = new List<DTO.HoaDon_DTO>();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                HoaDon_DTO kh = new HoaDon_DTO();
+                kh.SMahd = dt.Rows[i]["mahoadon"].ToString();
+                kh.SMatd = dt.Rows[i]["matuyenduong"].ToString();
+                kh.SMakh = dt.Rows[i]["makh"].ToString();
+                kh.SMaNV = dt.Rows[i]["manv"].ToString();
+                kh.DtNgayLap = DateTime.Parse(dt.Rows[i]["ngaylap"].ToString());
+                kh.DtNgayGiao = DateTime.Parse(dt.Rows[i]["ngaygiao"].ToString());
+                kh.STongGiaTri = int.Parse(dt.Rows[i]["tonggiatri"].ToString());
+                kh.STenTuyen = dt.Rows[i]["tentuyenduong"].ToString();
+                kh.SHoTenkH = dt.Rows[i]["hoten"].ToString();
+                kh.SHoTenNV = dt.Rows[i]["tennv"].ToString();
+                lstNhanVien.Add(kh);
+            }
+            DataProvider.DongKetNoi(con);
+            return lstNhanVien;
+        }
+        public static List<HoaDon_DTO> TimHoaDonTheoTenKH(string ma)
+        {
+            string sTruyVan = string.Format(@"select hd.mahoadon,td.matuyenduong,kh.makh,nv.manv,hd.ngaylap,hd.ngaygiao,hd.tonggiatri,td.tentuyenduong,kh.hoten,nv.tennv 
+            from hoadon hd, tuyenduong td, khachhang kh, nhanvien nv 
+            where kh.hoten like N'%{0}%' and hd.matuyenduong=td.matuyenduong and hd.makh=kh.makh and hd.manv=nv.manv
+			group by hd.mahoadon,td.matuyenduong,kh.makh,nv.manv,hd.ngaylap,hd.ngaygiao,hd.tonggiatri,td.tentuyenduong,kh.hoten,nv.tennv", ma);
+            con = DataProvider.MoKetNoi();
+            DataTable dt = DataProvider.TruyVanLayDuLieu(sTruyVan, con);
+            if (dt.Rows.Count == 0)
+            {
+                return null;
+            }
+            List<HoaDon_DTO> lstNhanVien = new List<DTO.HoaDon_DTO>();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                HoaDon_DTO kh = new HoaDon_DTO();
+                kh.SMahd = dt.Rows[i]["mahoadon"].ToString();
+                kh.SMatd = dt.Rows[i]["matuyenduong"].ToString();
+                kh.SMakh = dt.Rows[i]["makh"].ToString();
+                kh.SMaNV = dt.Rows[i]["manv"].ToString();
+                kh.DtNgayLap = DateTime.Parse(dt.Rows[i]["ngaylap"].ToString());
+                kh.DtNgayGiao = DateTime.Parse(dt.Rows[i]["ngaygiao"].ToString());
+                kh.STongGiaTri = int.Parse(dt.Rows[i]["tonggiatri"].ToString());
+                kh.STenTuyen = dt.Rows[i]["tentuyenduong"].ToString();
+                kh.SHoTenkH = dt.Rows[i]["hoten"].ToString();
+                kh.SHoTenNV = dt.Rows[i]["tennv"].ToString();
+                lstNhanVien.Add(kh);
+            }
+            DataProvider.DongKetNoi(con);
+            return lstNhanVien;
+        }
+        public static List<HoaDon_DTO> TimHoaDonTheoTenNV(string ma)
+        {
+            string sTruyVan = string.Format(@"select hd.*,td.tentuyenduong,kh.hoten,nv.tennv 
+            from hoadon hd,tuyenduong td, khachhang kh, nhanvien nv 
+            where nv.tennv like N'%{0}%' and hd.matuyenduong=td.matuyenduong and hd.makh=kh.makh and hd.manv=nv.manv", ma);
+            con = DataProvider.MoKetNoi();
+            DataTable dt = DataProvider.TruyVanLayDuLieu(sTruyVan, con);
+            if (dt.Rows.Count == 0)
+            {
+                return null;
+            }
+            List<HoaDon_DTO> lstNhanVien = new List<DTO.HoaDon_DTO>();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                HoaDon_DTO kh = new HoaDon_DTO();
+                kh.SMahd = dt.Rows[i]["mahoadon"].ToString();
+                kh.SMatd = dt.Rows[i]["matuyenduong"].ToString();
+                kh.SMakh = dt.Rows[i]["makh"].ToString();
+                kh.SMaNV = dt.Rows[i]["manv"].ToString();
+                kh.DtNgayLap = DateTime.Parse(dt.Rows[i]["ngaylap"].ToString());
+                kh.DtNgayGiao = DateTime.Parse(dt.Rows[i]["ngaygiao"].ToString());
+                kh.STongGiaTri = int.Parse(dt.Rows[i]["tonggiatri"].ToString());
+                kh.STenTuyen = dt.Rows[i]["tentuyenduong"].ToString();
+                kh.SHoTenkH = dt.Rows[i]["hoten"].ToString();
+                kh.SHoTenNV = dt.Rows[i]["tennv"].ToString();
 
                 lstNhanVien.Add(kh);
             }

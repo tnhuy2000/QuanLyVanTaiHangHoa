@@ -18,7 +18,7 @@ namespace GUI
         public frm_ChiTietHoaDon(string ma,string tendangnhap)
         {
             InitializeComponent();
-            mahoadon = ma;
+            //mahoadon = ma;
             ten = tendangnhap;
         }
 
@@ -66,7 +66,7 @@ namespace GUI
 
         private void frm_ChiTietHoaDon_Load(object sender, EventArgs e)
         {
-            cbomahoadon.Text = mahoadon;
+            //cbomahoadon.Text = mahoadon;
             List<HangHoa_DTO> LstChucVu = HangHoa_BUS.LayDSHangHoa();
             cbotenhanghoa.DataSource = LstChucVu;
             cbotenhanghoa.DisplayMember = "STenHang";
@@ -76,9 +76,9 @@ namespace GUI
             //combobox ma hoa don
             List<HoaDon_DTO> LstChucVu1 = HoaDon_BUS.LayDSHoaDon();
             cbomahoadon.DataSource = LstChucVu1;
-            cbomahoadon.DisplayMember = "SMahd";
+           // cbomahoadon.DisplayMember = "SMahd";
             //LstChucVu.Insert(0, d1);
-            cbomahoadon.ValueMember = "sMaKH";
+            cbomahoadon.ValueMember = "SMahd";
             HienThiDSLenDatagrid();
         }
         private void HienThiDSLenDatagrid()
@@ -194,6 +194,24 @@ namespace GUI
                 this.Close();
                 WriteLog.Write(ten, "Đã đóng form Hoá Đơn");
             }
+        }
+
+        private void cbomahoadon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string ma = cbomahoadon.SelectedValue.ToString();
+
+            List<ChiTietHoaDon_DTO> lstnv1 = ChiTietHoaDon_BUS.TimChiTietHoaDonTheoMaHoaDon(ma);
+            if (lstnv1 == null)
+            {
+                //MessageBox.Show("Chưa có chi tiết nào!");
+                return;
+            }
+            dgvDSCTHH.DataSource = lstnv1;
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            HienThiDSLenDatagrid();
         }
     }
 }

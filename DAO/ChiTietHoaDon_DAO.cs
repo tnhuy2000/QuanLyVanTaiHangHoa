@@ -87,7 +87,9 @@ namespace DAO
 
         public static List<ChiTietHoaDon_DTO> TimChiTietHoaDonTheoMaHoaDon(string ma)
         {
-            string sTruyVan = string.Format(@"select * from chitiethoadon where mahoadon like '%{0}%' ", ma);
+            string sTruyVan = string.Format(@"select ct.mahoadon,ct.mahanghoa,ct.soluong,h.tenhang,h.donvitinh,h.gia 
+                                            from chitiethoadon ct, hanghoa h 
+                                            where mahoadon like N'%{0}%' and ct.mahanghoa=h.mahanghoa", ma);
             con = DataProvider.MoKetNoi();
             DataTable dt = DataProvider.TruyVanLayDuLieu(sTruyVan, con);
             if (dt.Rows.Count == 0)
@@ -101,7 +103,9 @@ namespace DAO
                 kh.SMahd = dt.Rows[i]["mahoadon"].ToString();
                 kh.SMaHang = dt.Rows[i]["mahanghoa"].ToString();
                 kh.SSoLuong = int.Parse(dt.Rows[i]["soluong"].ToString());
-
+                kh.STenHang = dt.Rows[i]["tenhang"].ToString();
+                kh.SDvt = dt.Rows[i]["donvitinh"].ToString();
+                kh.SGia = int.Parse(dt.Rows[i]["gia"].ToString());
 
                 lstNhanVien.Add(kh);
             }

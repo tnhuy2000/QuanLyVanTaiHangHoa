@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 7:12:05 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 7:12:07 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 7:12:10 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã đóng form Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 7:12:33 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã thêm hoá đơn có mã số: HD017</tenlog>
+    <ngaygio>21/5/2021 7:12:42 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã cập nhật hoá đơn có mã số: HD008</tenlog>
+    <ngaygio>21/5/2021 7:14:02 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã cập nhật hoá đơn có mã số: HD008</tenlog>
+    <ngaygio>21/5/2021 7:14:50 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã cập nhật hoá đơn có mã số: HD008</tenlog>
+    <ngaygio>21/5/2021 7:15:03 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã đóng form Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 7:15:12 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 7:15:37 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã đóng form Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 7:16:14 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Thoát chương trình</tenlog>
+    <ngaygio>21/5/2021 7:16:17 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 7:18:52 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 7:18:53 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 7:18:56 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 7:21:58 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 7:21:59 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form log</tenlog>
+    <ngaygio>21/5/2021 7:22:01 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 7:22:59 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã cập nhật hoá đơn có mã số: HD016</tenlog>
+    <ngaygio>21/5/2021 7:23:55 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã đóng form Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 7:24:01 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 7:24:05 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 8:12:25 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 8:12:26 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 8:12:28 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 8:38:28 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 8:38:30 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 8:38:32 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã thêm hoá đơn có mã số: HD019</tenlog>
+    <ngaygio>21/5/2021 8:38:43 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã thêm hoá đơn có mã số: HD019</tenlog>
+    <ngaygio>21/5/2021 8:38:53 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã đóng form Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 8:41:30 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 8:41:35 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 9:18:53 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 9:18:54 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 9:18:56 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 9:26:51 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 9:26:51 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 9:26:53 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 9:30:38 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 9:30:38 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 9:30:46 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 9:34:26 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 9:34:26 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 9:34:31 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 9:38:20 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 9:38:20 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 9:38:22 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 9:41:42 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 9:41:42 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 9:41:44 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 9:43:55 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 9:43:56 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 9:43:57 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 9:57:15 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 9:57:16 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 9:57:17 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 10:01:47 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 10:01:47 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 10:01:52 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 10:07:01 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 10:07:02 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 10:07:03 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 10:11:35 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 10:11:35 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 10:11:37 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã đóng form Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 10:12:46 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 10:12:48 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã thêm hoá đơn có mã số: HD019</tenlog>
+    <ngaygio>21/5/2021 10:13:10 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã đóng form Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 10:13:18 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 10:17:49 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 10:17:50 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 10:17:51 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 10:23:48 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 10:23:48 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 10:23:50 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 10:26:12 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 10:26:12 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 10:26:14 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã thêm hoá đơn có mã số: HD010</tenlog>
+    <ngaygio>21/5/2021 10:26:44 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã thêm hoá đơn có mã số: HD010</tenlog>
+    <ngaygio>21/5/2021 10:26:59 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã cập nhật hoá đơn có mã số: HD010</tenlog>
+    <ngaygio>21/5/2021 10:27:54 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã cập nhật hoá đơn có mã số: HD010</tenlog>
+    <ngaygio>21/5/2021 10:28:23 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã đóng form Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 10:28:32 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng xuất</tenlog>
+    <ngaygio>21/5/2021 10:29:15 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung />
+    <tenlog>Thoát chương trình</tenlog>
+    <ngaygio>21/5/2021 10:29:17 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 10:34:42 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 10:34:43 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 10:34:44 AM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 12:43:26 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 12:43:27 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 12:43:28 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 12:44:54 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 12:44:54 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Lập Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 12:44:56 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã thêm hoá đơn có mã số: HD010</tenlog>
+    <ngaygio>21/5/2021 12:45:09 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã thêm hoá đơn có mã số: HD010</tenlog>
+    <ngaygio>21/5/2021 12:45:21 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đã đóng form Hoá Đơn</tenlog>
+    <ngaygio>21/5/2021 12:46:38 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 2:23:14 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 2:23:14 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Thống kê danh sách nhân viên</tenlog>
+    <ngaygio>21/5/2021 2:23:20 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 2:25:41 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 2:25:41 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Thống kê danh sách nhân viên</tenlog>
+    <ngaygio>21/5/2021 2:25:50 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 2:30:33 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 2:30:34 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Thống kê danh sách nhân viên</tenlog>
+    <ngaygio>21/5/2021 2:30:37 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 2:42:37 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 2:42:38 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Thống kê danh sách nhân viên</tenlog>
+    <ngaygio>21/5/2021 2:42:50 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 2:44:49 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 2:44:49 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Thống kê danh sách nhân viên</tenlog>
+    <ngaygio>21/5/2021 2:44:53 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 2:47:38 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 2:47:38 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Thống kê danh sách nhân viên</tenlog>
+    <ngaygio>21/5/2021 2:47:42 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 2:54:17 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 2:54:17 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form QL Tuyến Đường</tenlog>
+    <ngaygio>21/5/2021 2:54:20 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Thống kê danh sách nhân viên</tenlog>
+    <ngaygio>21/5/2021 2:54:24 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 2:58:14 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 2:58:14 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Thống kê danh sách nhân viên</tenlog>
+    <ngaygio>21/5/2021 2:58:17 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 3:04:26 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 3:04:28 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Thống kê danh sách nhân viên</tenlog>
+    <ngaygio>21/5/2021 3:04:34 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Thoát chương trình</tenlog>
+    <ngaygio>21/5/2021 3:09:36 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 3:17:29 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 3:17:30 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Thống kê danh sách nhân viên</tenlog>
+    <ngaygio>21/5/2021 3:17:34 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 3:24:12 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 3:24:13 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Thống kê danh sách nhân viên</tenlog>
+    <ngaygio>21/5/2021 3:24:17 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 3:31:45 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 3:31:46 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form QL Tuyến Đường</tenlog>
+    <ngaygio>21/5/2021 3:31:49 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Thống kê danh sách nhân viên</tenlog>
+    <ngaygio>21/5/2021 3:31:52 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Thoát chương trình</tenlog>
+    <ngaygio>21/5/2021 3:32:39 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Đăng nhập thành công</tenlog>
+    <ngaygio>21/5/2021 3:35:15 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form frm_main</tenlog>
+    <ngaygio>21/5/2021 3:35:16 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form QL Tuyến Đường</tenlog>
+    <ngaygio>21/5/2021 3:35:17 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Mở form Thống kê danh sách nhân viên</tenlog>
+    <ngaygio>21/5/2021 3:35:20 PM</ngaygio>
+  </log>
+  <log>
+    <nguoidung>admin</nguoidung>
+    <tenlog>Thoát chương trình</tenlog>
+    <ngaygio>21/5/2021 3:38:26 PM</ngaygio>
+  </log>
+</ArrayOfLog>

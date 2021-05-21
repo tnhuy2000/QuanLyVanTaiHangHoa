@@ -50,6 +50,15 @@ namespace GUI
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnCTHD = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.radmahoadon = new System.Windows.Forms.RadioButton();
+            this.radtentuyen = new System.Windows.Forms.RadioButton();
+            this.radtennhanvien = new System.Windows.Forms.RadioButton();
+            this.radtenKH = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSHoaDon)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -61,10 +70,10 @@ namespace GUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDSHoaDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDSHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSHoaDon.Location = new System.Drawing.Point(12, 299);
+            this.dgvDSHoaDon.Location = new System.Drawing.Point(12, 304);
             this.dgvDSHoaDon.Name = "dgvDSHoaDon";
             this.dgvDSHoaDon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSHoaDon.Size = new System.Drawing.Size(851, 190);
+            this.dgvDSHoaDon.Size = new System.Drawing.Size(851, 185);
             this.dgvDSHoaDon.TabIndex = 0;
             this.dgvDSHoaDon.Click += new System.EventHandler(this.dgvDSHoaDon_Click);
             // 
@@ -258,11 +267,109 @@ namespace GUI
             this.btnCTHD.UseVisualStyleBackColor = true;
             this.btnCTHD.Click += new System.EventHandler(this.btnCTHD_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(344, 255);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(83, 15);
+            this.label8.TabIndex = 38;
+            this.label8.Text = "Nhập từ khoá:";
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Location = new System.Drawing.Point(665, 247);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(75, 31);
+            this.btnTimKiem.TabIndex = 40;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Location = new System.Drawing.Point(433, 252);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(194, 21);
+            this.txtTimKiem.TabIndex = 41;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(766, 247);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(75, 31);
+            this.btnRefresh.TabIndex = 39;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 241);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(88, 15);
+            this.label9.TabIndex = 37;
+            this.label9.Text = "Tìm kiếm theo:";
+            // 
+            // radmahoadon
+            // 
+            this.radmahoadon.AutoSize = true;
+            this.radmahoadon.Location = new System.Drawing.Point(106, 241);
+            this.radmahoadon.Name = "radmahoadon";
+            this.radmahoadon.Size = new System.Drawing.Size(91, 19);
+            this.radmahoadon.TabIndex = 42;
+            this.radmahoadon.TabStop = true;
+            this.radmahoadon.Text = "Mã hoá đơn";
+            this.radmahoadon.UseVisualStyleBackColor = true;
+            // 
+            // radtentuyen
+            // 
+            this.radtentuyen.AutoSize = true;
+            this.radtentuyen.Location = new System.Drawing.Point(215, 241);
+            this.radtentuyen.Name = "radtentuyen";
+            this.radtentuyen.Size = new System.Drawing.Size(78, 19);
+            this.radtentuyen.TabIndex = 42;
+            this.radtentuyen.TabStop = true;
+            this.radtentuyen.Text = "Tên tuyến";
+            this.radtentuyen.UseVisualStyleBackColor = true;
+            // 
+            // radtennhanvien
+            // 
+            this.radtennhanvien.AutoSize = true;
+            this.radtennhanvien.Location = new System.Drawing.Point(106, 266);
+            this.radtennhanvien.Name = "radtennhanvien";
+            this.radtennhanvien.Size = new System.Drawing.Size(102, 19);
+            this.radtennhanvien.TabIndex = 42;
+            this.radtennhanvien.TabStop = true;
+            this.radtennhanvien.Text = "Tên nhân viên";
+            this.radtennhanvien.UseVisualStyleBackColor = true;
+            // 
+            // radtenKH
+            // 
+            this.radtenKH.AutoSize = true;
+            this.radtenKH.Location = new System.Drawing.Point(215, 266);
+            this.radtenKH.Name = "radtenKH";
+            this.radtenKH.Size = new System.Drawing.Size(113, 19);
+            this.radtenKH.TabIndex = 42;
+            this.radtenKH.TabStop = true;
+            this.radtenKH.Text = "Tên khách hàng";
+            this.radtenKH.UseVisualStyleBackColor = true;
+            // 
             // frm_hoadon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 501);
+            this.Controls.Add(this.radtennhanvien);
+            this.Controls.Add(this.radtenKH);
+            this.Controls.Add(this.radtentuyen);
+            this.Controls.Add(this.radmahoadon);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.btnTimKiem);
+            this.Controls.Add(this.txtTimKiem);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.btnCTHD);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnThoat);
@@ -278,6 +385,7 @@ namespace GUI
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -304,5 +412,14 @@ namespace GUI
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnCTHD;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.RadioButton radmahoadon;
+        private System.Windows.Forms.RadioButton radtentuyen;
+        private System.Windows.Forms.RadioButton radtennhanvien;
+        private System.Windows.Forms.RadioButton radtenKH;
     }
 }

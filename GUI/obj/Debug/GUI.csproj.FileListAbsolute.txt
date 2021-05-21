@@ -402,3 +402,6 @@ E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\ru\Microsoft.ReportViewer.WinForms.res
 E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 E:\doan\QuanLyVanTaiHangHoa\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_ChiTietHoaDon.resources
+E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\GUI.frm_rpHoaDon.resources
+E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\RdlCompile.cache
+E:\doan\QuanLyVanTaiHangHoa\GUI\obj\Debug\RdlCompile.compiled

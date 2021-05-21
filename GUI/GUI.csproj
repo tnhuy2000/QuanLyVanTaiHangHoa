@@ -182,6 +182,12 @@
     <Compile Include="frm_nhanvien.Designer.cs">
       <DependentUpon>frm_nhanvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_rpHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpHoaDon.Designer.cs">
+      <DependentUpon>frm_rpHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_taixe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLVTHHDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLVTHHDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="frm_ChiTietHoaDon.resx">
       <DependentUpon>frm_ChiTietHoaDon.cs</DependentUpon>
@@ -233,6 +244,9 @@
     <EmbeddedResource Include="frm_nhanvien.resx">
       <DependentUpon>frm_nhanvien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpHoaDon.resx">
+      <DependentUpon>frm_rpHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_taixe.resx">
       <DependentUpon>frm_taixe.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,6 +264,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RP_NhanVien.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -265,6 +280,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLVTHHDataSet2.xsc">
+      <DependentUpon>QLVTHHDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTHHDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLVTHHDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLVTHHDataSet2.xss">
+      <DependentUpon>QLVTHHDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Resources\bg1.png" />
   </ItemGroup>
   <ItemGroup>
